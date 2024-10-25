@@ -1016,7 +1016,7 @@ GameObject:
   - component: {fileID: 1517785858383151261}
   - component: {fileID: 4895534732621109991}
   m_Layer: 0
-  m_Name: Military_guy
+  m_Name: SK_Military_Survivalist (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
