@@ -27,17 +27,13 @@ public class cameraScript : MonoBehaviour
     public LayerMask collisionLayers = -1;
 
     private float xDeg = 0.0f;
-    private float yDeg = 0.0f;
+    public float yDeg = 6.0f;
     private float currentDistance;
     private float desiredDistance;
     private float correctedDistance;
 
     void Start()
     {
-        Vector3 angles = transform.eulerAngles;
-        xDeg = angles.x;
-        yDeg = angles.y;
-
         currentDistance = distance;
         desiredDistance = distance;
         correctedDistance = distance;
@@ -58,17 +54,10 @@ public class cameraScript : MonoBehaviour
         if (!target)
             return;
 
-        // If either mouse buttons are down, let the mouse govern camera position
+        // Ease behind the target if any of the directional keys are pressed
         if (GUIUtility.hotControl == 0)
         {
-            if (Input.GetMouseButton(0) || Input.GetMouseButton(1))
-            {
-                xDeg += Input.GetAxis("Mouse X") * xSpeed * 0.02f;
-                yDeg -= Input.GetAxis("Mouse Y") * ySpeed * 0.02f;
-            }
-
-            // otherwise, ease behind the target if any of the directional keys are pressed
-            else if (Input.GetAxis("Vertical") != 0 || Input.GetAxis("Horizontal") != 0)
+            if (Input.GetAxis("Vertical") != 0 || Input.GetAxis("Horizontal") != 0)
             {
                 float targetRotationAngle = target.eulerAngles.y;
                 float currentRotationAngle = transform.eulerAngles.y;
