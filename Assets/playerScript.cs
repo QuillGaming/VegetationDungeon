@@ -16,7 +16,7 @@ public class playerScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        HUD.text = "Enemy health: " + enemyHealth;
     }
 
     // Update is called once per frame
@@ -35,11 +35,11 @@ public class playerScript : MonoBehaviour
         {
             Debug.Log("You punched");
             GameObject.Find("Player").GetComponent<Animator>().SetBool("isPunching", true);
-            animationDelay = 1f;
+            animationDelay = 0.9f;
             if (enemyIsHitable)
             {
                 enemyHealth -= 2;
-                HUD.text = "enemy health: " + enemyHealth;
+                HUD.text = "Enemy health: " + enemyHealth;
             }
         }
         animationDelay -= Time.deltaTime;
@@ -51,8 +51,8 @@ public class playerScript : MonoBehaviour
 
         //enemy death
         if (enemyHealth <= 0)
-        {
-            GameObject.Find("Enemy_test").GetComponent<UnityEngine.AI.NavMeshAgent>().isStopped = true; //this should stop the agent's movement upon death
+        {   //stops agent from following player after death
+            GameObject.Find("Enemy_test").GetComponent<UnityEngine.AI.NavMeshAgent>().isStopped = true;
         }
     }
 
@@ -74,40 +74,20 @@ public class playerScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "to_Hit_Box")
+        if (other.gameObject.tag == "enemy")
         {
             Debug.Log("enemy is in box");
             enemyIsHitable = true;
         }
     }
 
-    /*void OnCollisionEnter(Collision collision)
-    {
-        foreach (ContactPoint contact in collision.contacts)
-        {
-            Debug.DrawRay(contact.point, contact.normal, Color.white);
-        }
-        if (collision.relativeVelocity.magnitude > 2)
-        {
-            Debug.Log("enemy is in box");
-            enemyIsHitable = true;
-        }
-    }*/
 
     private void OnTriggerExit(Collider other2)
     {
-        if (other2.gameObject.name == "to_Hit_Box")
+        if (other2.gameObject.tag == "enemy")
         {
             Debug.Log("enemy is not in box");
             enemyIsHitable = false;
         }
     }
-    /*void onTriggerStay (Collider hitArea)
-    {
-        if (hitArea.gameObject.name == "to_Hit_Box")
-        {
-            enemyIsHitable = true;
-            Debug.Log("enemy is in box");
-        }
-    }*/
 }
