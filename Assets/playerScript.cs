@@ -59,6 +59,7 @@ public class playerScript : MonoBehaviour
             enemyIsHitable = false;
         }
 
+        //player death
         if (playerHealth <= 0)
         {   //stops agent from following player after death
             HUD.text = "You have died. The death animation will come later.";
