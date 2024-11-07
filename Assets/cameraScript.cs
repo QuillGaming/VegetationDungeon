@@ -31,12 +31,14 @@ public class cameraScript : MonoBehaviour
     private float currentDistance;
     private float desiredDistance;
     private float correctedDistance;
+    private float mouseAxis;
 
     void Start()
     {
         currentDistance = distance;
         desiredDistance = distance;
         correctedDistance = distance;
+        mouseAxis = Input.GetAxis("Mouse ScrollWheel");
 
         // Make the rigid body not change rotation
         if (this.gameObject.GetComponent<Rigidbody>())
@@ -67,7 +69,7 @@ public class cameraScript : MonoBehaviour
 
 
         // calculate the desired distance
-        desiredDistance -= Input.GetAxis("Mouse ScrollWheel") * Time.deltaTime * zoomRate * Mathf.Abs(desiredDistance) * speedDistance;
+        desiredDistance -= mouseAxis * Time.deltaTime * zoomRate * Mathf.Abs(desiredDistance) * speedDistance;
         desiredDistance = Mathf.Clamp(desiredDistance, minDistance, maxDistance);
 
         yDeg = ClampAngle(yDeg, yMinLimit, yMaxLimit);
