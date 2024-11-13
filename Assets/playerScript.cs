@@ -14,7 +14,7 @@ public class playerScript : MonoBehaviour
     bool playerIsHitable = false;
     bool healthDisplayDelay = false;
     float animationDelay = 0f;
-    float enemyAttackCooldown = 2.5f;
+    float enemyAttackCooldown = 1f; //was 2.5 before but was too slow for tests
     int enemyHealth = 10;
     int playerHealth = 20;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -69,8 +69,9 @@ public class playerScript : MonoBehaviour
         //player death
         if (playerHealth <= 0)
         {   //stops agent from following player after death
-            HUD.text = "You have died. The death animation will come later.";
+            HUD.text = "You have died. The death animation is a work in progress.";
             playerIsHitable = false;
+            GameObject.Find("Player").GetComponent<Animator>().SetBool("isDead", true);
         }
 
         enemyAttackCooldown -= Time.deltaTime;
@@ -78,7 +79,7 @@ public class playerScript : MonoBehaviour
         {
             playerHealth -= 1;
             HUD.text = "Enemy health: " + enemyHealth + "\nPlayer health: " + playerHealth;
-            enemyAttackCooldown = 2.5f;
+            enemyAttackCooldown = 1f; //was 2.5 which was too slow for tests
         }
     }
 
@@ -89,11 +90,15 @@ public class playerScript : MonoBehaviour
 
     void FixedUpdate()
     {
-        transform.Rotate(Vector3.up, mv.x * yRot);
-        if (mv.y > 0)
+        if (playerHealth > 0)
         {
-            transform.position += transform.forward * mv.y * playerSpeed;
+            transform.Rotate(Vector3.up, mv.x * yRot);
+            if (mv.y > 0)
+            {
+                transform.position += transform.forward * mv.y * playerSpeed;
+            }
         }
+        
     }
 
     

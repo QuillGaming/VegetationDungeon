@@ -26,12 +26,15 @@ public class cameraScript : MonoBehaviour
 
     public LayerMask collisionLayers = -1;
 
+
     private float xDeg = 0.0f;
     public float yDeg = 6.0f;
     private float currentDistance;
     private float desiredDistance;
     private float correctedDistance;
     private float mouseAxis;
+
+    private bool notDead = true; //this is mine
 
     void Start()
     {
@@ -109,6 +112,16 @@ public class cameraScript : MonoBehaviour
 
         transform.rotation = rotation;
         transform.position = position;
+
+        // this is the code that I want to use to move the camera back upon the player's death
+        if (GameObject.Find("Player").GetComponent<Animator>().GetBool("isDead") && notDead)
+        {
+            //this moves the camera
+            Debug.Log("the player is dead");
+            GameObject.Find("Main Camera").GetComponent<Transform>().localPosition += new Vector3(0, 0, 4);
+            notDead = false;
+        }
+
     }
 
     private static float ClampAngle(float angle, float min, float max)
