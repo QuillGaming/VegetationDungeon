@@ -12,6 +12,7 @@ public class playerScript : MonoBehaviour
 
     bool enemyIsHitable = false;
     bool playerIsHitable = false;
+    bool healthDisplayDelay = false;
     float animationDelay = 0f;
     float enemyAttackCooldown = 2.5f;
     int enemyHealth = 10;
@@ -39,15 +40,21 @@ public class playerScript : MonoBehaviour
             Debug.Log("You punched");
             GameObject.Find("Player").GetComponent<Animator>().SetBool("isPunching", true);
             animationDelay = 0.9f;
-            if (enemyIsHitable)
+            if (enemyIsHitable) 
             {
-                enemyHealth -= 2;
-                HUD.text = "Enemy health: " + enemyHealth + "\nPlayer health: " + playerHealth;
+                healthDisplayDelay = true;
+                enemyIsHitable = false;
             }
         }
         animationDelay -= Time.deltaTime;
         if (animationDelay <= 0.0f)
         {
+            if (healthDisplayDelay)
+            {
+                enemyHealth -= 2;
+                HUD.text = "Enemy health: " + enemyHealth + "\nPlayer health: " + playerHealth;
+                healthDisplayDelay = false;
+            }
             Debug.Log("punch done");
             GameObject.Find("Player").GetComponent<Animator>().SetBool("isPunching", false);
         }
@@ -106,13 +113,22 @@ public class playerScript : MonoBehaviour
         }
     }
 
+    private void OnTriggerStay(Collider other1)
+    {
+        if (other1.gameObject.tag == "enemy")
+        {
+            Debug.Log("enemy is in box");
+            enemyIsHitable = true;
+        }
+    }
+
     private void OnTriggerExit(Collider other2)
     {
-        if (other2.gameObject.tag == "enemy")
+        /*if (other2.gameObject.tag == "enemy")
         {
             Debug.Log("enemy is not in box");
             enemyIsHitable = false;
-        }
+        }*/
 
         if (other2.gameObject.name == "damage_player")
         {
