@@ -9,6 +9,7 @@ public class playerScript : MonoBehaviour
     public float playerSpeed;
     public float yRot;
     public TMPro.TMP_Text HUD;
+    public GameObject Items;
 
     bool enemyIsHitable = false;
     bool playerIsHitable = false;
@@ -69,7 +70,7 @@ public class playerScript : MonoBehaviour
         //player death
         if (playerHealth <= 0)
         {   //stops agent from following player after death
-            HUD.text = "You have died. The death animation is a work in progress.";
+            HUD.text = "You have died.";
             playerIsHitable = false;
             GameObject.Find("Player").GetComponent<Animator>().SetBool("isDead", true);
         }
@@ -116,6 +117,18 @@ public class playerScript : MonoBehaviour
             Debug.Log("enemy can hit player");
             playerIsHitable = true;
         }
+
+        //make the trigger to pick up the sword
+        if (other.gameObject.name == "pick_sword" && !GameObject.Find("Player").GetComponent<Animator>().GetBool("hasSword"))
+        {
+            HUD.text = "Enemy health: " + enemyHealth + "\nPlayer health: " + playerHealth + "\nPress 'e' to pick up sword.";
+            if (Input.GetKey("e"))
+            {
+                GameObject.Find("Player").GetComponent<Animator>().SetBool("hasSword", true);
+                Items.GetComponent<itemScript>().swordFloor.SetActive(false);
+                Items.GetComponent<itemScript>().swordHeld.SetActive(true);
+            }
+        }
     }
 
     private void OnTriggerStay(Collider other1)
@@ -124,6 +137,17 @@ public class playerScript : MonoBehaviour
         {
             Debug.Log("enemy is in box");
             enemyIsHitable = true;
+        }
+
+        if (other1.gameObject.name == "pick_sword" && !GameObject.Find("Player").GetComponent<Animator>().GetBool("hasSword"))
+        {
+            HUD.text = "Enemy health: " + enemyHealth + "\nPlayer health: " + playerHealth + "\nPress 'e' to pick up sword.";
+            if (Input.GetKey("e"))
+            {
+                GameObject.Find("Player").GetComponent<Animator>().SetBool("hasSword", true);
+                Items.GetComponent<itemScript>().swordFloor.SetActive(false);
+                Items.GetComponent<itemScript>().swordHeld.SetActive(true);
+            }
         }
     }
 
