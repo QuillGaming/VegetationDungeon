@@ -58,7 +58,7 @@ public class cameraScript : MonoBehaviour
         {
             //this moves the camera
             Debug.Log("the player is dead");
-            desiredDistance += 5f;
+            desiredDistance += 4f;
             notDead = false;
         }
         else if(!GameObject.Find("Player").GetComponent<Animator>().GetBool("isDead") || !notDead)

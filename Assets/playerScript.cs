@@ -18,6 +18,7 @@ public class playerScript : MonoBehaviour
     float enemyAttackCooldown = 1f; //was 2.5 before but was too slow for tests
     int enemyHealth = 10;
     int playerHealth = 20;
+    int damageOuput = 2;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -52,7 +53,7 @@ public class playerScript : MonoBehaviour
         {
             if (healthDisplayDelay)
             {
-                enemyHealth -= 2;
+                enemyHealth -= damageOuput;
                 HUD.text = "Enemy health: " + enemyHealth + "\nPlayer health: " + playerHealth;
                 healthDisplayDelay = false;
             }
@@ -127,6 +128,7 @@ public class playerScript : MonoBehaviour
                 GameObject.Find("Player").GetComponent<Animator>().SetBool("hasSword", true);
                 Items.GetComponent<itemScript>().swordFloor.SetActive(false);
                 Items.GetComponent<itemScript>().swordHeld.SetActive(true);
+                damageOuput = 3;
             }
         }
     }
@@ -147,6 +149,7 @@ public class playerScript : MonoBehaviour
                 GameObject.Find("Player").GetComponent<Animator>().SetBool("hasSword", true);
                 Items.GetComponent<itemScript>().swordFloor.SetActive(false);
                 Items.GetComponent<itemScript>().swordHeld.SetActive(true);
+                damageOuput = 3;
             }
         }
     }
