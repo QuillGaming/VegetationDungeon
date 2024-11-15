@@ -10,6 +10,7 @@ public class playerScript : MonoBehaviour
     public float yRot;
     public TMPro.TMP_Text HUD;
     public GameObject Items;
+    public GameObject box;
 
     bool enemyIsHitable = false;
     bool playerIsHitable = false;
@@ -67,6 +68,14 @@ public class playerScript : MonoBehaviour
             GameObject.Find("Enemy_test").GetComponent<UnityEngine.AI.NavMeshAgent>().isStopped = true;
             enemyIsHitable = false;
         }
+        else if (playerIsHitable)
+        {
+            GameObject.Find("Enemy_test").GetComponent<UnityEngine.AI.NavMeshAgent>().isStopped = true;
+        }
+        else
+        {
+            GameObject.Find("Enemy_test").GetComponent<UnityEngine.AI.NavMeshAgent>().isStopped = false;
+        }
 
         //player death
         if (playerHealth <= 0)
@@ -83,6 +92,9 @@ public class playerScript : MonoBehaviour
             HUD.text = "Enemy health: " + enemyHealth + "\nPlayer health: " + playerHealth;
             enemyAttackCooldown = 1f; //was 2.5 which was too slow for tests
         }
+
+        
+
     }
 
     void OnMove(InputValue move)
@@ -95,10 +107,10 @@ public class playerScript : MonoBehaviour
         if (playerHealth > 0)
         {
             transform.Rotate(Vector3.up, mv.x * yRot);
-            if (mv.y > 0)
-            {
-                transform.position += transform.forward * mv.y * playerSpeed;
-            }
+            //if (mv.y > 0)
+            //{
+            transform.position += transform.forward * mv.y * playerSpeed;
+            //}
         }
         
     }
@@ -128,6 +140,9 @@ public class playerScript : MonoBehaviour
                 GameObject.Find("Player").GetComponent<Animator>().SetBool("hasSword", true);
                 Items.GetComponent<itemScript>().swordFloor.SetActive(false);
                 Items.GetComponent<itemScript>().swordHeld.SetActive(true);
+                //paddle.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
+                box.transform.localScale = new Vector3(1.6f, 1.5f, 1.4f);
+                box.transform.localPosition += new Vector3(0f, 0f, 0.6f);
                 damageOuput = 3;
             }
         }
@@ -149,6 +164,8 @@ public class playerScript : MonoBehaviour
                 GameObject.Find("Player").GetComponent<Animator>().SetBool("hasSword", true);
                 Items.GetComponent<itemScript>().swordFloor.SetActive(false);
                 Items.GetComponent<itemScript>().swordHeld.SetActive(true);
+                box.transform.localScale = new Vector3(1.6f, 1.5f, 1.4f);
+                box.transform.localPosition += new Vector3(0f, 0f, 0.6f);
                 damageOuput = 3;
             }
         }
