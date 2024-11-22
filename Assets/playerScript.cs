@@ -16,6 +16,7 @@ public class playerScript : MonoBehaviour
     bool playerIsHitable = false;
     bool healthDisplayDelay = false;
     float animationDelay = 0f;
+    float weaponDelay = 0.9f;
     float enemyAttackCooldown = 1f; //was 2.5 before but was too slow for tests
     int enemyHealth = 10;
     int playerHealth = 20;
@@ -42,7 +43,7 @@ public class playerScript : MonoBehaviour
         {
             Debug.Log("You punched");
             GameObject.Find("Player").GetComponent<Animator>().SetBool("isPunching", true);
-            animationDelay = 0.9f;
+            animationDelay = weaponDelay;
             if (enemyIsHitable) 
             {
                 healthDisplayDelay = true;
@@ -143,6 +144,7 @@ public class playerScript : MonoBehaviour
                 //paddle.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
                 box.transform.localScale = new Vector3(1.6f, 1.5f, 1.4f);
                 box.transform.localPosition += new Vector3(0f, 0f, 0.6f);
+                weaponDelay = 1.4f;
                 damageOuput = 3;
             }
         }
@@ -166,6 +168,7 @@ public class playerScript : MonoBehaviour
                 Items.GetComponent<itemScript>().swordHeld.SetActive(true);
                 box.transform.localScale = new Vector3(1.6f, 1.5f, 1.4f);
                 box.transform.localPosition += new Vector3(0f, 0f, 0.6f);
+                weaponDelay = 1.0f; // this might need to be a different value : idk
                 damageOuput = 3;
             }
         }

@@ -13504,7 +13504,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerSpeed: 0.05
-  yRot: 1
+  yRot: 2
   HUD: {fileID: 700008295}
   Items: {fileID: 729528099}
   box: {fileID: 636144981}
