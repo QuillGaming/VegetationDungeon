@@ -72,7 +72,7 @@ public class playerScript : MonoBehaviour
         else if (playerIsHitable)
         {
             GameObject.Find("Enemy_test").GetComponent<UnityEngine.AI.NavMeshAgent>().isStopped = true;
-            GameObject.Find("Enemy_test").transform.rotation = GameObject.Find("Player").transform.rotation;
+            //see if the enemy rotation bug can be fixed here
         }
         else
         {
@@ -153,7 +153,7 @@ public class playerScript : MonoBehaviour
             playerIsHitable = true;
         }
 
-        //make the trigger to pick up the sword
+        //pick up the sword
         if (other.gameObject.name == "pick_sword" && !GameObject.Find("Player").GetComponent<Animator>().GetBool("hasSword"))
         {
             HUD.text = "Press 'e' to pick up sword.";
@@ -166,6 +166,21 @@ public class playerScript : MonoBehaviour
                 box.transform.localPosition += new Vector3(0f, 0f, 0.6f);
                 weaponDelay = 1.3f;
                 damageOuput = 3;
+                HUD.text = "";
+            }
+        }
+
+        //pick up the halberd
+        if (other.gameObject.name == "pick_halberd" && !GameObject.Find("Player").GetComponent<Animator>().GetBool("hasHalberd"))
+        {
+            HUD.text = "Press 'e' to pick up halberd.";
+            if (Input.GetKey("e"))
+            {
+                GameObject.Find("Player").GetComponent<Animator>().SetBool("hasHalberd", true);
+                Items.GetComponent<itemScript>().halberdFloor.SetActive(false);
+                Items.GetComponent<itemScript>().halberdHeld.SetActive(true);
+                weaponDelay = 1.8f;
+                damageOuput = 4;
                 HUD.text = "";
             }
         }
@@ -190,6 +205,21 @@ public class playerScript : MonoBehaviour
                 box.transform.localPosition += new Vector3(0f, 0f, 0.6f);
                 weaponDelay = 1.3f;
                 damageOuput = 3;
+                HUD.text = "";
+            }
+        }
+
+        //pick up the halberd
+        if (other1.gameObject.name == "pick_halberd" && !GameObject.Find("Player").GetComponent<Animator>().GetBool("hasHalberd"))
+        {
+            HUD.text = "Press 'e' to pick up halberd.";
+            if (Input.GetKey("e"))
+            {
+                GameObject.Find("Player").GetComponent<Animator>().SetBool("hasHalberd", true);
+                Items.GetComponent<itemScript>().halberdFloor.SetActive(false);
+                Items.GetComponent<itemScript>().halberdHeld.SetActive(true);
+                weaponDelay = 1.8f;
+                damageOuput = 4;
                 HUD.text = "";
             }
         }
