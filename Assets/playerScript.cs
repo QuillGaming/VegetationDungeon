@@ -11,6 +11,8 @@ public class playerScript : MonoBehaviour
     public TMPro.TMP_Text HUD;
     public GameObject Items;
     public GameObject box;
+    public GameObject eHealthBar;
+    public GameObject pHealthBar;
 
     bool enemyIsHitable = false;
     bool playerIsHitable = false;
@@ -18,13 +20,16 @@ public class playerScript : MonoBehaviour
     float animationDelay = 0f;
     float weaponDelay = 0.9f;
     float enemyAttackCooldown = 1f; //was 2.5 before but was too slow for tests
+    float backSpeed = 0.035f;
+    float walkSpeed = 0.05f;
+    float runSpeed = 0.085f;
     int enemyHealth = 10;
     int playerHealth = 20;
     int damageOuput = 2;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        HUD.text = "Enemy health: " + enemyHealth + "\nPlayer health: " + playerHealth;
     }
 
     // Update is called once per frame
@@ -32,14 +37,49 @@ public class playerScript : MonoBehaviour
     {
         if (mv.y > 0)
         {
+            GameObject.Find("Player").GetComponent<Animator>().SetBool("isRunning", false);
+            GameObject.Find("Player").GetComponent<Animator>().SetBool("backwards", false);
             GameObject.Find("Player").GetComponent<Animator>().SetBool("isWalking", true);
+            playerSpeed = walkSpeed;
+            if (Input.GetKey("left shift"))
+            {
+                GameObject.Find("Player").GetComponent<Animator>().SetBool("isRunning", true);
+                playerSpeed = runSpeed;
+            }
+        }
+        else if (mv.y < 0)
+        {
+            GameObject.Find("Player").GetComponent<Animator>().SetBool("backwards", true);
+            GameObject.Find("Player").GetComponent<Animator>().SetBool("isWalking", true);
+            GameObject.Find("Player").GetComponent<Animator>().SetBool("isRunning", false);
+            playerSpeed = backSpeed;
         }
         else
         {
             GameObject.Find("Player").GetComponent<Animator>().SetBool("isWalking", false);
+            GameObject.Find("Player").GetComponent<Animator>().SetBool("backwards", false);
+            GameObject.Find("Player").GetComponent<Animator>().SetBool("isRunning", false);
+            playerSpeed = walkSpeed;
         }
 
-        if (Input.GetMouseButtonDown(0) && animationDelay <= 0.0f) // should be left click
+        //enemy death
+        if (enemyHealth <= 0)
+        {   //stops agent from following player after death
+            GameObject.Find("Enemy_test").GetComponent<UnityEngine.AI.NavMeshAgent>().isStopped = true;
+            eHealthBar.SetActive(false);
+            enemyIsHitable = false;
+        }
+        else if (playerIsHitable)
+        {
+            GameObject.Find("Enemy_test").GetComponent<UnityEngine.AI.NavMeshAgent>().isStopped = true;
+            GameObject.Find("Enemy_test").transform.rotation = GameObject.Find("Player").transform.rotation;
+        }
+        else
+        {
+            GameObject.Find("Enemy_test").GetComponent<UnityEngine.AI.NavMeshAgent>().isStopped = false;
+        }
+
+        if (Input.GetMouseButtonDown(0) && animationDelay <= 0.0f)
         {
             Debug.Log("You punched");
             GameObject.Find("Player").GetComponent<Animator>().SetBool("isPunching", true);
@@ -56,41 +96,27 @@ public class playerScript : MonoBehaviour
             if (healthDisplayDelay)
             {
                 enemyHealth -= damageOuput;
-                HUD.text = "Enemy health: " + enemyHealth + "\nPlayer health: " + playerHealth;
+                eHealthBar.GetComponent<enemyHealthBar>().UpdateHealthBar(enemyHealth, 10f);
                 healthDisplayDelay = false;
             }
-            Debug.Log("punch done");
             GameObject.Find("Player").GetComponent<Animator>().SetBool("isPunching", false);
         }
 
-        //enemy death
-        if (enemyHealth <= 0)
-        {   //stops agent from following player after death
-            GameObject.Find("Enemy_test").GetComponent<UnityEngine.AI.NavMeshAgent>().isStopped = true;
-            enemyIsHitable = false;
-        }
-        else if (playerIsHitable)
-        {
-            GameObject.Find("Enemy_test").GetComponent<UnityEngine.AI.NavMeshAgent>().isStopped = true;
-        }
-        else
-        {
-            GameObject.Find("Enemy_test").GetComponent<UnityEngine.AI.NavMeshAgent>().isStopped = false;
-        }
-
+        
         //player death
         if (playerHealth <= 0)
         {   //stops agent from following player after death
             HUD.text = "You have died.";
             playerIsHitable = false;
             GameObject.Find("Player").GetComponent<Animator>().SetBool("isDead", true);
+            pHealthBar.SetActive(false);
         }
 
         enemyAttackCooldown -= Time.deltaTime;
         if (playerIsHitable && enemyAttackCooldown <= 0.0f && enemyHealth > 0)
         {
             playerHealth -= 1;
-            HUD.text = "Enemy health: " + enemyHealth + "\nPlayer health: " + playerHealth;
+            pHealthBar.GetComponent<playerHealthBar>().UpdateHealthBar(playerHealth, 20f);
             enemyAttackCooldown = 1f; //was 2.5 which was too slow for tests
         }
 
@@ -108,10 +134,7 @@ public class playerScript : MonoBehaviour
         if (playerHealth > 0)
         {
             transform.Rotate(Vector3.up, mv.x * yRot);
-            //if (mv.y > 0)
-            //{
             transform.position += transform.forward * mv.y * playerSpeed;
-            //}
         }
         
     }
@@ -122,30 +145,28 @@ public class playerScript : MonoBehaviour
     {
         if (other.gameObject.tag == "enemy")
         {
-            Debug.Log("enemy is in box");
             enemyIsHitable = true;
         }
 
         if (other.gameObject.name == "damage_player")
         {
-            Debug.Log("enemy can hit player");
             playerIsHitable = true;
         }
 
         //make the trigger to pick up the sword
         if (other.gameObject.name == "pick_sword" && !GameObject.Find("Player").GetComponent<Animator>().GetBool("hasSword"))
         {
-            HUD.text = "Enemy health: " + enemyHealth + "\nPlayer health: " + playerHealth + "\nPress 'e' to pick up sword.";
+            HUD.text = "Press 'e' to pick up sword.";
             if (Input.GetKey("e"))
             {
                 GameObject.Find("Player").GetComponent<Animator>().SetBool("hasSword", true);
                 Items.GetComponent<itemScript>().swordFloor.SetActive(false);
                 Items.GetComponent<itemScript>().swordHeld.SetActive(true);
-                //paddle.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
                 box.transform.localScale = new Vector3(1.6f, 1.5f, 1.4f);
                 box.transform.localPosition += new Vector3(0f, 0f, 0.6f);
-                weaponDelay = 1.4f;
+                weaponDelay = 1.3f;
                 damageOuput = 3;
+                HUD.text = "";
             }
         }
     }
@@ -154,13 +175,12 @@ public class playerScript : MonoBehaviour
     {
         if (other1.gameObject.tag == "enemy")
         {
-            Debug.Log("enemy is in box");
             enemyIsHitable = true;
         }
 
         if (other1.gameObject.name == "pick_sword" && !GameObject.Find("Player").GetComponent<Animator>().GetBool("hasSword"))
         {
-            HUD.text = "Enemy health: " + enemyHealth + "\nPlayer health: " + playerHealth + "\nPress 'e' to pick up sword.";
+            HUD.text = "Press 'e' to pick up sword.";
             if (Input.GetKey("e"))
             {
                 GameObject.Find("Player").GetComponent<Animator>().SetBool("hasSword", true);
@@ -168,23 +188,18 @@ public class playerScript : MonoBehaviour
                 Items.GetComponent<itemScript>().swordHeld.SetActive(true);
                 box.transform.localScale = new Vector3(1.6f, 1.5f, 1.4f);
                 box.transform.localPosition += new Vector3(0f, 0f, 0.6f);
-                weaponDelay = 1.0f; // this might need to be a different value : idk
+                weaponDelay = 1.3f;
                 damageOuput = 3;
+                HUD.text = "";
             }
         }
     }
 
     private void OnTriggerExit(Collider other2)
     {
-        /*if (other2.gameObject.tag == "enemy")
-        {
-            Debug.Log("enemy is not in box");
-            enemyIsHitable = false;
-        }*/
 
         if (other2.gameObject.name == "damage_player")
         {
-            Debug.Log("enemy cannot hit player");
             playerIsHitable = false;
         }
     }
