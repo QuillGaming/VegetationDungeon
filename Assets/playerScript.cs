@@ -109,7 +109,7 @@ public class playerScript : MonoBehaviour
             transform.Rotate(Vector3.up, mv.x * yRot);
             //if (mv.y > 0)
             //{
-            transform.position += transform.forward * mv.y * playerSpeed;
+            GetComponent<Rigidbody>().linearVelocity = transform.forward * mv.y * playerSpeed;
             //}
         }
         
