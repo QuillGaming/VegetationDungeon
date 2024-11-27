@@ -22,9 +22,9 @@ public class playerScript : MonoBehaviour
     float animationDelay = 0f;
     float weaponDelay = 0.9f;
 
-    float backSpeed = 0.035f;
-    float walkSpeed = 0.05f;
-    float runSpeed = 0.085f;
+    float backSpeed = 2f;
+    float walkSpeed = 3f;
+    float runSpeed = 5.5f;
 
     int playerHealth = 25;
     int damageOuput = 2;
