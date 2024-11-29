@@ -39,6 +39,7 @@ public class playerScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        // the enemies are created with separate health variables, but when the damage is applied, it is only applied to enemy #1
         e1 = CreateEnemy(1f, 10f, 1f, GameObject.Find("Enemy1"), GameObject.Find("Enemy1").transform.GetChild(2).GetChild(0).gameObject);
         e2 = CreateEnemy(1f, 10f, 1f, GameObject.Find("Enemy2"), GameObject.Find("Enemy2").transform.GetChild(2).GetChild(0).gameObject);
         e3 = CreateEnemy(1f, 10f, 1f, GameObject.Find("Enemy3"), GameObject.Find("Enemy3").transform.GetChild(2).GetChild(0).gameObject);
