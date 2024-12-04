@@ -348,7 +348,7 @@ public class playerScript : MonoBehaviour
             e.getHealthBar().SetActive(false);
             e.setHitable(false);
         }
-        else if (e.getHitPlayer())
+        else if (e.getHitPlayer() || !HasLineOfSight(e.getEnemy().transform, GameObject.Find("Player").transform))
         {
             e.getEnemy().GetComponent<UnityEngine.AI.NavMeshAgent>().isStopped = true;
             //see if the enemy rotation bug can be fixed here
@@ -380,5 +380,19 @@ public class playerScript : MonoBehaviour
             pHealthBar.GetComponent<playerHealthBar>().UpdateHealthBar(playerHealth, 20f);
             e.setAttackDelay(1.2f); //was 2.5 which was too slow for tests
         }
+    }
+
+    //perform raycasting for line of sight capability
+    private bool HasLineOfSight(Transform enemy, Transform player)
+    {
+        Vector3 direction = player.position - enemy.position;
+
+        RaycastHit hit;
+
+        if (Physics.Raycast(enemy.position, direction, out hit, Mathf.Infinity))
+        {
+            return hit.collider.gameObject == player.gameObject;
+        }
+        return false;
     }
 }
