@@ -39,10 +39,10 @@ public class playerScript : MonoBehaviour
     void Start()
     {
         // the enemies are created with separate health variables, but when the damage is applied, it is only applied to enemy #1
-        e1 = Enemy.CreateEnemy(1f, 10f, 1f, GameObject.Find("Enemy1"), GameObject.Find("Enemy1").transform.GetChild(2).GetChild(0).gameObject);
-        e2 = Enemy.CreateEnemy(1f, 10f, 1f, GameObject.Find("Enemy2"), GameObject.Find("Enemy2").transform.GetChild(2).GetChild(0).gameObject);
-        e3 = Enemy.CreateEnemy(1f, 10f, 1f, GameObject.Find("Enemy3"), GameObject.Find("Enemy3").transform.GetChild(2).GetChild(0).gameObject);
-        e4 = Enemy.CreateEnemy(1f, 10f, 1f, GameObject.Find("Enemy4"), GameObject.Find("Enemy4").transform.GetChild(2).GetChild(0).gameObject);
+        e1 = Enemy.CreateEnemy(1f, 10f, 2f, GameObject.Find("Enemy1"), GameObject.Find("Enemy1").transform.GetChild(2).GetChild(0).gameObject);
+        e2 = Enemy.CreateEnemy(1f, 10f, 2f, GameObject.Find("Enemy2"), GameObject.Find("Enemy2").transform.GetChild(2).GetChild(0).gameObject);
+        e3 = Enemy.CreateEnemy(1f, 10f, 2f, GameObject.Find("Enemy3"), GameObject.Find("Enemy3").transform.GetChild(2).GetChild(0).gameObject);
+        e4 = Enemy.CreateEnemy(1f, 10f, 2f, GameObject.Find("Enemy4"), GameObject.Find("Enemy4").transform.GetChild(2).GetChild(0).gameObject);
     }
 
     // Update is called once per frame
@@ -345,17 +345,20 @@ public class playerScript : MonoBehaviour
         if (e.getHitPoints() <= 0)
         {   //stops agent from following player after death
             e.getEnemy().GetComponent<UnityEngine.AI.NavMeshAgent>().isStopped = true;
+            e.getEnemy().transform.GetChild(1).gameObject.GetComponent<Animator>().SetBool("isDead", true);
             e.getHealthBar().SetActive(false);
             e.setHitable(false);
         }
         else if (e.getHitPlayer() || !HasLineOfSight(e.getEnemy().transform, GameObject.Find("Player").transform))
         {
             e.getEnemy().GetComponent<UnityEngine.AI.NavMeshAgent>().isStopped = true;
+            e.getEnemy().transform.GetChild(1).gameObject.GetComponent<Animator>().SetBool("isWalking", false);
             //see if the enemy rotation bug can be fixed here
         }
         else
         {
             e.getEnemy().GetComponent<UnityEngine.AI.NavMeshAgent>().isStopped = false;
+            e.getEnemy().transform.GetChild(1).gameObject.GetComponent<Animator>().SetBool("isWalking", true);
         }
 
         if (attackMade && e.getHitable())
@@ -371,15 +374,19 @@ public class playerScript : MonoBehaviour
             e.setHealthDelay(false);
         }
 
-
-
         e.setAttackDelay(e.getAttackDelay() - Time.deltaTime);
         if (e.getHitPlayer() && e.getAttackDelay() <= 0.0f && e.getHitPoints() > 0)
         {
             playerHealth -= 1;
             pHealthBar.GetComponent<playerHealthBar>().UpdateHealthBar(playerHealth, 20f);
-            e.setAttackDelay(1.2f); //was 2.5 which was too slow for tests
+            e.setAttackDelay(2f); //was 2.5 which was too slow for tests
+            e.getEnemy().transform.GetChild(1).gameObject.GetComponent<Animator>().SetBool("isPunching", true);
         }
+        else if(e.getAttackDelay() <= 0.0f)
+        {
+            e.getEnemy().transform.GetChild(1).gameObject.GetComponent<Animator>().SetBool("isPunching", false);
+        }
+
     }
 
     //perform raycasting for line of sight capability
