@@ -14,7 +14,6 @@ public class playerScript : MonoBehaviour
     public GameObject box;
     public GameObject pHealthBar;
 
-    bool healthDisplayDelay = false;
     bool halberd = false;
     bool sword = false;
     bool attackMade = false;
@@ -40,25 +39,11 @@ public class playerScript : MonoBehaviour
     void Start()
     {
         // the enemies are created with separate health variables, but when the damage is applied, it is only applied to enemy #1
-        e1 = CreateEnemy(1f, 10f, 1f, GameObject.Find("Enemy1"), GameObject.Find("Enemy1").transform.GetChild(2).GetChild(0).gameObject);
-        e2 = CreateEnemy(1f, 10f, 1f, GameObject.Find("Enemy2"), GameObject.Find("Enemy2").transform.GetChild(2).GetChild(0).gameObject);
-        e3 = CreateEnemy(1f, 10f, 1f, GameObject.Find("Enemy3"), GameObject.Find("Enemy3").transform.GetChild(2).GetChild(0).gameObject);
-        e4 = CreateEnemy(1f, 10f, 1f, GameObject.Find("Enemy4"), GameObject.Find("Enemy4").transform.GetChild(2).GetChild(0).gameObject);
+        e1 = Enemy.CreateEnemy(1f, 10f, 1f, GameObject.Find("Enemy1"), GameObject.Find("Enemy1").transform.GetChild(2).GetChild(0).gameObject);
+        e2 = Enemy.CreateEnemy(1f, 10f, 1f, GameObject.Find("Enemy2"), GameObject.Find("Enemy2").transform.GetChild(2).GetChild(0).gameObject);
+        e3 = Enemy.CreateEnemy(1f, 10f, 1f, GameObject.Find("Enemy3"), GameObject.Find("Enemy3").transform.GetChild(2).GetChild(0).gameObject);
+        e4 = Enemy.CreateEnemy(1f, 10f, 1f, GameObject.Find("Enemy4"), GameObject.Find("Enemy4").transform.GetChild(2).GetChild(0).gameObject);
     }
-
-    Enemy CreateEnemy(float da, float hp, float ad, GameObject en, GameObject hb)
-    {
-        Enemy newEnemy = ScriptableObject.CreateInstance<Enemy>();
-        newEnemy.damageAmount = da;
-        newEnemy.hitPoints = hp;
-        newEnemy.attackDelay = ad;
-        newEnemy.enemy = en;
-        newEnemy.hitable = false;
-        newEnemy.canHitPlayer = false;
-        newEnemy.healthBar = hb;
-        Debug.Log(hb.name);
-        return newEnemy;
-}
 
     // Update is called once per frame
     void Update()
@@ -133,10 +118,10 @@ public class playerScript : MonoBehaviour
         if (playerHealth <= 0)
         {   //stops agent from following player after death
             HUD.text = "You have died.";
-            e1.canHitPlayer = false;
-            e2.canHitPlayer = false;
-            e3.canHitPlayer = false;
-            e4.canHitPlayer = false;
+            e1.setHitPlayer(false);
+            e2.setHitPlayer(false);
+            e3.setHitPlayer(false);
+            e4.setHitPlayer(false);
             GameObject.Find("Player").GetComponent<Animator>().SetBool("isDead", true);
             pHealthBar.SetActive(false);
         }
@@ -169,38 +154,38 @@ public class playerScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == e1.enemy.name)
+        if (other.gameObject.name == e1.getEnemy().name)
         {
-            e1.hitable = true;
+            e1.setHitable(true);
         }
-        if (other.gameObject.name == e2.enemy.name)
+        if (other.gameObject.name == e2.getEnemy().name)
         {
-            e2.hitable = true;
+            e2.setHitable(true);
         }
-        if (other.gameObject.name == e3.enemy.name)
+        if (other.gameObject.name == e3.getEnemy().name)
         {
-            e3.hitable = true;
+            e3.setHitable(true);
         }
-        if (other.gameObject.name == e4.enemy.name)
+        if (other.gameObject.name == e4.getEnemy().name)
         {
-            e4.hitable = true;
+            e4.setHitable(true);
         }
 
         if (other.gameObject == GameObject.Find("Enemy1").transform.GetChild(0).gameObject)
         {
-             e1.canHitPlayer = true;
+             e1.setHitPlayer(true);
         }
         if (other.gameObject == GameObject.Find("Enemy2").transform.GetChild(0).gameObject)
         {
-            e2.canHitPlayer = true;
+            e2.setHitPlayer(true);
         }
         if (other.gameObject == GameObject.Find("Enemy3").transform.GetChild(0).gameObject)
         {
-            e3.canHitPlayer = true;
+            e3.setHitPlayer(true);
         }
         if (other.gameObject == GameObject.Find("Enemy4").transform.GetChild(0).gameObject)
         {
-            e4.canHitPlayer = true;
+            e4.setHitPlayer(true);
         }
 
 
@@ -253,21 +238,21 @@ public class playerScript : MonoBehaviour
 
     private void OnTriggerStay(Collider other1)
     {
-        if (other1.gameObject.name == e1.enemy.name)
+        if (other1.gameObject.name == e1.getEnemy().name)
         {
-            e1.hitable = true;
+            e1.setHitable(true);
         }
-        if (other1.gameObject.name == e2.enemy.name)
+        if (other1.gameObject.name == e2.getEnemy().name)
         {
-            e2.hitable = true;
+            e2.setHitable(true);
         }
-        if (other1.gameObject.name == e3.enemy.name)
+        if (other1.gameObject.name == e3.getEnemy().name)
         {
-            e3.hitable = true;
+            e3.setHitable(true);
         }
-        if (other1.gameObject.name == e4.enemy.name)
+        if (other1.gameObject.name == e4.getEnemy().name)
         {
-            e4.hitable = true;
+            e4.setHitable(true);
         }
 
         if (other1.gameObject.name == "pick_sword" && !sword)
@@ -318,66 +303,82 @@ public class playerScript : MonoBehaviour
 
     private void OnTriggerExit(Collider other2)
     {
+        if (other2.gameObject.name == e1.getEnemy().name)
+        {
+            e1.setHitable(false);
+        }
+        if (other2.gameObject.name == e2.getEnemy().name)
+        {
+            e2.setHitable(false);
+        }
+        if (other2.gameObject.name == e3.getEnemy().name)
+        {
+            e3.setHitable(false);
+        }
+        if (other2.gameObject.name == e4.getEnemy().name)
+        {
+            e4.setHitable(false);
+        }
+
 
         if (other2.gameObject == GameObject.Find("Enemy1").transform.GetChild(0).gameObject)
         {
-            e1.canHitPlayer = false;
+            e1.setHitPlayer(false);
         }
         if (other2.gameObject == GameObject.Find("Enemy2").transform.GetChild(0).gameObject)
         {
-            e2.canHitPlayer = false;
+            e2.setHitPlayer(false);
         }
         if (other2.gameObject == GameObject.Find("Enemy3").transform.GetChild(0).gameObject)
         {
-            e3.canHitPlayer = false;
+            e3.setHitPlayer(false);
         }
         if (other2.gameObject == GameObject.Find("Enemy4").transform.GetChild(0).gameObject)
         {
-            e4.canHitPlayer = false;
+            e4.setHitPlayer(false);
         }
     }
 
     private void EnemyActions(Enemy e)
     {
         //enemy death
-        if (e.hitPoints <= 0)
+        if (e.getHitPoints() <= 0)
         {   //stops agent from following player after death
-            e.enemy.GetComponent<UnityEngine.AI.NavMeshAgent>().isStopped = true;
-            e.healthBar.SetActive(false);
-            e.hitable = false;
+            e.getEnemy().GetComponent<UnityEngine.AI.NavMeshAgent>().isStopped = true;
+            e.getHealthBar().SetActive(false);
+            e.setHitable(false);
         }
-        else if (e.canHitPlayer)
+        else if (e.getHitPlayer())
         {
-            e.enemy.GetComponent<UnityEngine.AI.NavMeshAgent>().isStopped = true;
+            e.getEnemy().GetComponent<UnityEngine.AI.NavMeshAgent>().isStopped = true;
             //see if the enemy rotation bug can be fixed here
         }
         else
         {
-            e.enemy.GetComponent<UnityEngine.AI.NavMeshAgent>().isStopped = false;
+            e.getEnemy().GetComponent<UnityEngine.AI.NavMeshAgent>().isStopped = false;
         }
 
-        if (attackMade && e.hitable)
+        if (attackMade && e.getHitable())
         {
-            healthDisplayDelay = true;
-            e.hitable = false;
+            e.setHitable(false);
+            e.setHealthDelay(true);
         }
-
-        //Debug.Log(animationDelay);
-        Debug.Log(healthDisplayDelay);
-        if (animationDelay <= 0.0f && healthDisplayDelay)
+        
+        if (animationDelay <= 0.0f && e.getHealthDelay())
         {
-            e.hitPoints -= damageOuput;
-            Debug.Log(e1.hitPoints + "   " + e2.hitPoints + "   " + e3.hitPoints + "   " + e4.hitPoints);
-            e.healthBar.GetComponent<enemyHealthBar>().UpdateHealthBar(e.hitPoints, 10f);
-            healthDisplayDelay = false;
+            e.setHitPoints(e.getHitPoints() - damageOuput);
+            e.getHealthBar().GetComponent<enemyHealthBar>().UpdateHealthBar(e.getHitPoints(), 10f);
+            e.setHealthDelay(false);
         }
 
-        e.attackDelay -= Time.deltaTime;
-        if (e.canHitPlayer && e.attackDelay <= 0.0f && e.hitPoints > 0)
+
+
+        e.setAttackDelay(e.getAttackDelay() - Time.deltaTime);
+        if (e.getHitPlayer() && e.getAttackDelay() <= 0.0f && e.getHitPoints() > 0)
         {
             playerHealth -= 1;
             pHealthBar.GetComponent<playerHealthBar>().UpdateHealthBar(playerHealth, 20f);
-            e.attackDelay = 1.2f; //was 2.5 which was too slow for tests
+            e.setAttackDelay(1.2f); //was 2.5 which was too slow for tests
         }
     }
 }
