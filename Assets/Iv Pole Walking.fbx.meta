@@ -1,0 +1,1810 @@
+fileFormatVersion: 2
+guid: e36997e2fa8b12140b23904b9925d97a
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: mixamorig:Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftToeBase
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightToeBase
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftHandThumb1
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftHandThumb2
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftHandThumb3
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftHandIndex1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftHandIndex2
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftHandIndex3
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftHandMiddle1
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftHandMiddle2
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftHandMiddle3
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftHandRing1
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftHandRing2
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftHandRing3
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightHandThumb1
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightHandThumb2
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightHandThumb3
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightHandIndex1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightHandIndex2
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightHandIndex3
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightHandMiddle1
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightHandMiddle2
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightHandMiddle3
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightHandRing1
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightHandRing2
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightHandRing3
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:Spine2
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Zombie Punching(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: leaf.021
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.24103105, y: 6.358628, z: -0.25969034}
+      rotation: {x: -0.000000042760416, y: 0.1362159, z: 0.9906792, w: -0.00000031099052}
+      scale: {x: 15.380737, y: 15.380736, z: 15.380736}
+    - name: leaf.022
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.24103105, y: 6.358628, z: -0.25969034}
+      rotation: {x: -0.000000042760416, y: 0.1362159, z: 0.9906792, w: -0.00000031099052}
+      scale: {x: 15.380737, y: 15.380736, z: 15.380736}
+    - name: leaf.023
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.24103105, y: 6.358628, z: -0.25969034}
+      rotation: {x: -0.000000042760416, y: 0.1362159, z: 0.9906792, w: -0.00000031099052}
+      scale: {x: 15.380737, y: 15.380736, z: 15.380736}
+    - name: leaf.024
+      parentName: Zombie Punching(Clone)
+      position: {x: 1.0106272, y: 7.003397, z: -0.25969034}
+      rotation: {x: -0.000000042760416, y: 0.1362159, z: 0.9906792, w: -0.00000031099052}
+      scale: {x: 15.380737, y: 15.380736, z: 15.380736}
+    - name: leaf.025
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.8100102, y: 6.358628, z: -0.25969034}
+      rotation: {x: -0.000000042760416, y: 0.1362159, z: 0.9906792, w: -0.00000031099052}
+      scale: {x: 15.380737, y: 15.380736, z: 15.380736}
+    - name: leaf.026
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.8100102, y: 6.358628, z: -0.25969034}
+      rotation: {x: -0.000000042760416, y: 0.1362159, z: 0.9906792, w: -0.00000031099052}
+      scale: {x: 15.380737, y: 15.380736, z: 15.380736}
+    - name: leaf.027
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.8100102, y: 6.358628, z: -0.54285663}
+      rotation: {x: -0.000000042760416, y: 0.1362159, z: 0.9906792, w: -0.00000031099052}
+      scale: {x: 15.380737, y: 15.380736, z: 15.380736}
+    - name: leaf.028
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.8100102, y: 6.358628, z: 0.25610483}
+      rotation: {x: 0.13621575, y: 0.000000054668728, z: 0.00000039759848, w: 0.9906792}
+      scale: {x: -15.380737, y: -15.380737, z: -15.380737}
+    - name: leaf.029
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.8100102, y: 6.358628, z: 0.25610483}
+      rotation: {x: 0.13621575, y: 0.000000054668728, z: 0.00000039759848, w: 0.9906792}
+      scale: {x: -15.380737, y: -15.380737, z: -15.380737}
+    - name: leaf.030
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.8100102, y: 6.358628, z: 0.25610483}
+      rotation: {x: 0.13621575, y: 0.000000054668728, z: 0.00000039759848, w: 0.9906792}
+      scale: {x: -15.380737, y: -15.380737, z: -15.380737}
+    - name: leaf.031
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.24103105, y: 6.358628, z: 0.25610483}
+      rotation: {x: 0.13621575, y: 0.000000054668728, z: 0.00000039759848, w: 0.9906792}
+      scale: {x: -15.380737, y: -15.380737, z: -15.380737}
+    - name: leaf.032
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.24103105, y: 6.358628, z: 0.25610483}
+      rotation: {x: 0.13621575, y: 0.000000054668728, z: 0.00000039759848, w: 0.9906792}
+      scale: {x: -15.380737, y: -15.380737, z: -15.380737}
+    - name: leaf.033
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.24103105, y: 6.358628, z: 0.25610483}
+      rotation: {x: 0.13621575, y: 0.000000054668728, z: 0.00000039759848, w: 0.9906792}
+      scale: {x: -15.380737, y: -15.380737, z: -15.380737}
+    - name: leaf.034
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.81000996, y: 6.35863, z: -0.25969034}
+      rotation: {x: -0.000000042760416, y: 0.1362159, z: 0.9906792, w: -0.00000031099052}
+      scale: {x: 15.380737, y: 15.380736, z: 15.380736}
+    - name: leaf.035
+      parentName: Zombie Punching(Clone)
+      position: {x: -0.5919374, y: 7.003397, z: -0.25969034}
+      rotation: {x: -0.000000042760416, y: 0.1362159, z: 0.9906792, w: -0.00000031099052}
+      scale: {x: 15.380737, y: 15.380736, z: 15.380736}
+    - name: leaf.036
+      parentName: Zombie Punching(Clone)
+      position: {x: -0.0051749647, y: 7.003397, z: -0.25969034}
+      rotation: {x: -0.000000042760416, y: 0.1362159, z: 0.9906792, w: -0.00000031099052}
+      scale: {x: 15.380737, y: 15.380736, z: 15.380736}
+    - name: leaf.037
+      parentName: Zombie Punching(Clone)
+      position: {x: -0.84856224, y: 7.003397, z: -0.56504095}
+      rotation: {x: -0.000000042760416, y: 0.1362159, z: 0.9906792, w: -0.00000031099052}
+      scale: {x: 15.380737, y: 15.380736, z: 15.380736}
+    - name: leaf.038
+      parentName: Zombie Punching(Clone)
+      position: {x: 1.9605486, y: 7.003397, z: -0.6479778}
+      rotation: {x: -0.000000042760416, y: 0.1362159, z: 0.9906792, w: -0.00000031099052}
+      scale: {x: 15.380737, y: 15.380736, z: 15.380736}
+    - name: leaf.039
+      parentName: Zombie Punching(Clone)
+      position: {x: 1.5390497, y: 7.003397, z: -0.25969034}
+      rotation: {x: -0.000000042760416, y: 0.1362159, z: 0.9906792, w: -0.00000031099052}
+      scale: {x: 15.380737, y: 15.380736, z: 15.380736}
+    - name: leaf.040
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.49177516, y: 7.003397, z: -0.25969034}
+      rotation: {x: -0.000000042760416, y: 0.1362159, z: 0.9906792, w: -0.00000031099052}
+      scale: {x: 15.380737, y: 15.380736, z: 15.380736}
+    - name: leaf.041
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.49177516, y: 7.003397, z: 0.26079708}
+      rotation: {x: 0.13621575, y: 0.000000054668728, z: 0.00000039759848, w: 0.9906792}
+      scale: {x: -15.380737, y: -15.380737, z: -15.380737}
+    - name: leaf.042
+      parentName: Zombie Punching(Clone)
+      position: {x: 1.5390497, y: 7.003397, z: 0.26079708}
+      rotation: {x: 0.13621575, y: 0.000000054668728, z: 0.00000039759848, w: 0.9906792}
+      scale: {x: -15.380737, y: -15.380737, z: -15.380737}
+    - name: leaf.043
+      parentName: Zombie Punching(Clone)
+      position: {x: 1.9605486, y: 7.003397, z: 0.6490845}
+      rotation: {x: 0.13621575, y: 0.000000054668728, z: 0.00000039759848, w: 0.9906792}
+      scale: {x: -15.380737, y: -15.380737, z: -15.380737}
+    - name: leaf.044
+      parentName: Zombie Punching(Clone)
+      position: {x: -0.0051749945, y: 7.003397, z: 0.26079708}
+      rotation: {x: 0.13621575, y: 0.000000054668728, z: 0.00000039759848, w: 0.9906792}
+      scale: {x: -15.380737, y: -15.380737, z: -15.380737}
+    - name: leaf.045
+      parentName: Zombie Punching(Clone)
+      position: {x: -0.5919374, y: 7.003397, z: 0.26079708}
+      rotation: {x: 0.13621575, y: 0.000000054668728, z: 0.00000039759848, w: 0.9906792}
+      scale: {x: -15.380737, y: -15.380737, z: -15.380737}
+    - name: leaf.046
+      parentName: Zombie Punching(Clone)
+      position: {x: 1.0106272, y: 7.003397, z: 0.26079708}
+      rotation: {x: 0.13621575, y: 0.000000054668728, z: 0.00000039759848, w: 0.9906792}
+      scale: {x: -15.380737, y: -15.380737, z: -15.380737}
+    - name: leaf.047
+      parentName: Zombie Punching(Clone)
+      position: {x: -1.0178488, y: 7.3489914, z: 0.26186636}
+      rotation: {x: 0.9906792, y: -0.00000031099052, z: 0.000000042760366, w: -0.1362157}
+      scale: {x: 15.380737, y: 15.380737, z: 15.380737}
+    - name: leaf.048
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.58471584, y: 7.3489914, z: 0.26186636}
+      rotation: {x: 0.9906792, y: -0.00000031099052, z: 0.000000042760366, w: -0.1362157}
+      scale: {x: 15.380737, y: 15.380737, z: 15.380737}
+    - name: leaf.049
+      parentName: Zombie Punching(Clone)
+      position: {x: -0.0020466447, y: 7.3489914, z: 0.26186636}
+      rotation: {x: 0.9906792, y: -0.00000031099052, z: 0.000000042760366, w: -0.1362157}
+      scale: {x: 15.380737, y: 15.380737, z: 15.380737}
+    - name: leaf.050
+      parentName: Zombie Punching(Clone)
+      position: {x: -1.9677703, y: 7.3489914, z: 0.6501538}
+      rotation: {x: 0.9906792, y: -0.00000031099052, z: 0.000000042760366, w: -0.1362157}
+      scale: {x: 15.380737, y: 15.380737, z: 15.380737}
+    - name: leaf.051
+      parentName: Zombie Punching(Clone)
+      position: {x: -1.5462714, y: 7.3489914, z: 0.26186636}
+      rotation: {x: 0.9906792, y: -0.00000031099052, z: 0.000000042760366, w: -0.1362157}
+      scale: {x: 15.380737, y: 15.380737, z: 15.380737}
+    - name: leaf.052
+      parentName: Zombie Punching(Clone)
+      position: {x: -0.49899676, y: 7.3489914, z: 0.26186636}
+      rotation: {x: 0.9906792, y: -0.00000031099052, z: 0.000000042760366, w: -0.1362157}
+      scale: {x: 15.380737, y: 15.380737, z: 15.380737}
+    - name: leaf.053
+      parentName: Zombie Punching(Clone)
+      position: {x: -0.49899676, y: 7.3489914, z: -0.25969034}
+      rotation: {x: 0.0000003050363, y: 0.9906792, z: -0.13621588, w: -0.00000008606437}
+      scale: {x: -15.380737, y: -15.380736, z: -15.380736}
+    - name: leaf.054
+      parentName: Zombie Punching(Clone)
+      position: {x: -1.5462714, y: 7.3489914, z: -0.25969034}
+      rotation: {x: 0.0000003050363, y: 0.9906792, z: -0.13621588, w: -0.00000008606437}
+      scale: {x: -15.380737, y: -15.380736, z: -15.380736}
+    - name: leaf.055
+      parentName: Zombie Punching(Clone)
+      position: {x: 1.9599038, y: 7.7181582, z: -0.6479778}
+      rotation: {x: -0.000000058998598, y: 0.1362159, z: 0.9906792, w: -0.0000004290887}
+      scale: {x: 15.380737, y: 15.380736, z: 15.380736}
+    - name: leaf.056
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.8413406, y: 7.3489914, z: -0.56504095}
+      rotation: {x: 0.0000003050363, y: 0.9906792, z: -0.13621588, w: -0.00000008606437}
+      scale: {x: -15.380737, y: -15.380736, z: -15.380736}
+    - name: leaf.057
+      parentName: Zombie Punching(Clone)
+      position: {x: -0.0020466251, y: 7.3489914, z: -0.25969034}
+      rotation: {x: 0.0000003050363, y: 0.9906792, z: -0.13621588, w: -0.00000008606437}
+      scale: {x: -15.380737, y: -15.380736, z: -15.380736}
+    - name: leaf.058
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.5847158, y: 7.3489914, z: -0.25969034}
+      rotation: {x: 0.0000003050363, y: 0.9906792, z: -0.13621588, w: -0.00000008606437}
+      scale: {x: -15.380737, y: -15.380736, z: -15.380736}
+    - name: leaf.059
+      parentName: Zombie Punching(Clone)
+      position: {x: -1.0178488, y: 7.3489914, z: -0.25969034}
+      rotation: {x: 0.0000003050363, y: 0.9906792, z: -0.13621588, w: -0.00000008606437}
+      scale: {x: -15.380737, y: -15.380736, z: -15.380736}
+    - name: leaf.060
+      parentName: Zombie Punching(Clone)
+      position: {x: 1.0099822, y: 7.7181582, z: -0.25969034}
+      rotation: {x: -0.000000058998598, y: 0.1362159, z: 0.9906792, w: -0.0000004290887}
+      scale: {x: 15.380737, y: 15.380736, z: 15.380736}
+    - name: leaf.061
+      parentName: Zombie Punching(Clone)
+      position: {x: -0.59258235, y: 7.7181582, z: -0.25969034}
+      rotation: {x: -0.000000058998598, y: 0.1362159, z: 0.9906792, w: -0.0000004290887}
+      scale: {x: 15.380737, y: 15.380736, z: 15.380736}
+    - name: leaf.062
+      parentName: Zombie Punching(Clone)
+      position: {x: -0.0058198995, y: 7.7181582, z: -0.25969034}
+      rotation: {x: -0.000000058998598, y: 0.1362159, z: 0.9906792, w: -0.0000004290887}
+      scale: {x: 15.380737, y: 15.380736, z: 15.380736}
+    - name: leaf.063
+      parentName: Zombie Punching(Clone)
+      position: {x: -0.8492073, y: 7.7181582, z: -0.56504095}
+      rotation: {x: -0.000000058998598, y: 0.1362159, z: 0.9906792, w: -0.0000004290887}
+      scale: {x: 15.380737, y: 15.380736, z: 15.380736}
+    - name: leaf.064
+      parentName: Zombie Punching(Clone)
+      position: {x: 1.9599038, y: 7.7181582, z: -0.6479778}
+      rotation: {x: -0.000000058998598, y: 0.1362159, z: 0.9906792, w: -0.0000004290887}
+      scale: {x: 15.380737, y: 15.380736, z: 15.380736}
+    - name: leaf.065
+      parentName: Zombie Punching(Clone)
+      position: {x: 1.538405, y: 7.7181582, z: -0.25969034}
+      rotation: {x: -0.000000058998598, y: 0.1362159, z: 0.9906792, w: -0.0000004290887}
+      scale: {x: 15.380737, y: 15.380736, z: 15.380736}
+    - name: leaf.066
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.49113014, y: 7.7181582, z: -0.25969034}
+      rotation: {x: -0.000000058998598, y: 0.1362159, z: 0.9906792, w: -0.0000004290887}
+      scale: {x: 15.380737, y: 15.380736, z: 15.380736}
+    - name: leaf.067
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.49113014, y: 7.7181582, z: 0.26186636}
+      rotation: {x: 0.13621575, y: 0.00000005466875, z: 0.00000039759848, w: 0.9906792}
+      scale: {x: -15.380737, y: -15.380737, z: -15.380737}
+    - name: leaf.068
+      parentName: Zombie Punching(Clone)
+      position: {x: 1.538405, y: 7.7181582, z: 0.26186636}
+      rotation: {x: 0.13621575, y: 0.00000005466875, z: 0.00000039759848, w: 0.9906792}
+      scale: {x: -15.380737, y: -15.380737, z: -15.380737}
+    - name: leaf.069
+      parentName: Zombie Punching(Clone)
+      position: {x: 1.9599038, y: 7.7181582, z: 0.6501538}
+      rotation: {x: 0.13621575, y: 0.00000005466875, z: 0.00000039759848, w: 0.9906792}
+      scale: {x: -15.380737, y: -15.380737, z: -15.380737}
+    - name: leaf.070
+      parentName: Zombie Punching(Clone)
+      position: {x: -0.0058198995, y: 7.7181582, z: 0.26186636}
+      rotation: {x: 0.13621575, y: 0.00000005466875, z: 0.00000039759848, w: 0.9906792}
+      scale: {x: -15.380737, y: -15.380737, z: -15.380737}
+    - name: leaf.071
+      parentName: Zombie Punching(Clone)
+      position: {x: -0.59258235, y: 7.7181582, z: 0.26186636}
+      rotation: {x: 0.13621575, y: 0.00000005466875, z: 0.00000039759848, w: 0.9906792}
+      scale: {x: -15.380737, y: -15.380737, z: -15.380737}
+    - name: leaf.072
+      parentName: Zombie Punching(Clone)
+      position: {x: 1.0099822, y: 7.7181582, z: 0.26186636}
+      rotation: {x: 0.13621575, y: 0.00000005466875, z: 0.00000039759848, w: 0.9906792}
+      scale: {x: -15.380737, y: -15.380737, z: -15.380737}
+    - name: leaf.073
+      parentName: Zombie Punching(Clone)
+      position: {x: -0.59798944, y: 7.3489914, z: 0.91402066}
+      rotation: {x: 0.7005162, y: -0.09631902, z: -0.70051575, w: -0.09631908}
+      scale: {x: 15.380737, y: 15.380737, z: 15.380737}
+    - name: leaf.074
+      parentName: Zombie Punching(Clone)
+      position: {x: -1.0225412, y: 8.065988, z: 0.26186636}
+      rotation: {x: 0.9906792, y: -0.0000004290887, z: 0.000000058998555, w: -0.1362157}
+      scale: {x: 15.380737, y: 15.380737, z: 15.380737}
+    - name: leaf.075
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.5800232, y: 8.065988, z: 0.26186636}
+      rotation: {x: 0.9906792, y: -0.0000004290887, z: 0.000000058998555, w: -0.1362157}
+      scale: {x: 15.380737, y: 15.380737, z: 15.380737}
+    - name: leaf.076
+      parentName: Zombie Punching(Clone)
+      position: {x: -0.0067390087, y: 8.065988, z: 0.26186636}
+      rotation: {x: 0.9906792, y: -0.0000004290887, z: 0.000000058998555, w: -0.1362157}
+      scale: {x: 15.380737, y: 15.380737, z: 15.380737}
+    - name: leaf.077
+      parentName: Zombie Punching(Clone)
+      position: {x: -1.9724629, y: 8.065988, z: 0.6501538}
+      rotation: {x: 0.9906792, y: -0.0000004290887, z: 0.000000058998555, w: -0.1362157}
+      scale: {x: 15.380737, y: 15.380737, z: 15.380737}
+    - name: leaf.078
+      parentName: Zombie Punching(Clone)
+      position: {x: -1.5509639, y: 8.065988, z: 0.26186636}
+      rotation: {x: 0.9906792, y: -0.0000004290887, z: 0.000000058998555, w: -0.1362157}
+      scale: {x: 15.380737, y: 15.380737, z: 15.380737}
+    - name: leaf.079
+      parentName: Zombie Punching(Clone)
+      position: {x: -0.50368905, y: 8.065988, z: 0.26186636}
+      rotation: {x: 0.9906792, y: -0.0000004290887, z: 0.000000058998555, w: -0.1362157}
+      scale: {x: 15.380737, y: 15.380737, z: 15.380737}
+    - name: leaf.080
+      parentName: Zombie Punching(Clone)
+      position: {x: -0.50368905, y: 8.065988, z: -0.25969034}
+      rotation: {x: 0.00000042313445, y: 0.9906792, z: -0.13621588, w: -0.00000010230257}
+      scale: {x: -15.380737, y: -15.380736, z: -15.380736}
+    - name: leaf.081
+      parentName: Zombie Punching(Clone)
+      position: {x: -1.5509639, y: 8.065988, z: -0.25969034}
+      rotation: {x: 0.00000042313445, y: 0.9906792, z: -0.13621588, w: -0.00000010230257}
+      scale: {x: -15.380737, y: -15.380736, z: -15.380736}
+    - name: leaf.082
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.8366481, y: 8.065988, z: -0.56504095}
+      rotation: {x: 0.00000042313445, y: 0.9906792, z: -0.13621588, w: -0.00000010230257}
+      scale: {x: -15.380737, y: -15.380736, z: -15.380736}
+    - name: leaf.083
+      parentName: Zombie Punching(Clone)
+      position: {x: -0.0067390087, y: 8.065988, z: -0.25969034}
+      rotation: {x: 0.00000042313445, y: 0.9906792, z: -0.13621588, w: -0.00000010230257}
+      scale: {x: -15.380737, y: -15.380736, z: -15.380736}
+    - name: leaf.084
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.5800232, y: 8.065988, z: -0.25969034}
+      rotation: {x: 0.00000042313445, y: 0.9906792, z: -0.13621588, w: -0.00000010230257}
+      scale: {x: -15.380737, y: -15.380736, z: -15.380736}
+    - name: leaf.085
+      parentName: Zombie Punching(Clone)
+      position: {x: -1.0225412, y: 8.065988, z: -0.25969034}
+      rotation: {x: 0.00000042313445, y: 0.9906792, z: -0.13621588, w: -0.00000010230257}
+      scale: {x: -15.380737, y: -15.380736, z: -15.380736}
+    - name: leaf.086
+      parentName: Zombie Punching(Clone)
+      position: {x: -1.9724629, y: 8.065988, z: -0.6479778}
+      rotation: {x: 0.00000042313445, y: 0.9906792, z: -0.13621588, w: -0.00000010230257}
+      scale: {x: -15.380737, y: -15.380736, z: -15.380736}
+    - name: leaf.087
+      parentName: Zombie Punching(Clone)
+      position: {x: 1.0099822, y: 8.414313, z: 0.26186636}
+      rotation: {x: 0.13621575, y: 0.00000005466875, z: 0.00000039759848, w: 0.9906792}
+      scale: {x: -15.380737, y: -15.380737, z: -15.380737}
+    - name: leaf.088
+      parentName: Zombie Punching(Clone)
+      position: {x: -0.59258235, y: 8.414313, z: 0.26186636}
+      rotation: {x: 0.13621575, y: 0.00000005466875, z: 0.00000039759848, w: 0.9906792}
+      scale: {x: -15.380737, y: -15.380737, z: -15.380737}
+    - name: leaf.089
+      parentName: Zombie Punching(Clone)
+      position: {x: -0.0058198995, y: 8.414313, z: 0.26186636}
+      rotation: {x: 0.13621575, y: 0.00000005466875, z: 0.00000039759848, w: 0.9906792}
+      scale: {x: -15.380737, y: -15.380737, z: -15.380737}
+    - name: leaf.090
+      parentName: Zombie Punching(Clone)
+      position: {x: 1.9599038, y: 8.414313, z: 0.6501538}
+      rotation: {x: 0.13621575, y: 0.00000005466875, z: 0.00000039759848, w: 0.9906792}
+      scale: {x: -15.380737, y: -15.380737, z: -15.380737}
+    - name: leaf.091
+      parentName: Zombie Punching(Clone)
+      position: {x: 1.538405, y: 8.414313, z: 0.26186636}
+      rotation: {x: 0.13621575, y: 0.00000005466875, z: 0.00000039759848, w: 0.9906792}
+      scale: {x: -15.380737, y: -15.380737, z: -15.380737}
+    - name: leaf.092
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.49113014, y: 8.414313, z: 0.26186636}
+      rotation: {x: 0.13621575, y: 0.00000005466875, z: 0.00000039759848, w: 0.9906792}
+      scale: {x: -15.380737, y: -15.380737, z: -15.380737}
+    - name: leaf.093
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.49113014, y: 8.414313, z: -0.25969034}
+      rotation: {x: -0.000000058998598, y: 0.1362159, z: 0.9906792, w: -0.0000004290887}
+      scale: {x: 15.380737, y: 15.380736, z: 15.380736}
+    - name: leaf.094
+      parentName: Zombie Punching(Clone)
+      position: {x: 1.538405, y: 8.414313, z: -0.25969034}
+      rotation: {x: -0.000000058998598, y: 0.1362159, z: 0.9906792, w: -0.0000004290887}
+      scale: {x: 15.380737, y: 15.380736, z: 15.380736}
+    - name: leaf.095
+      parentName: Zombie Punching(Clone)
+      position: {x: -0.8492073, y: 8.414313, z: -0.56504095}
+      rotation: {x: -0.000000058998598, y: 0.1362159, z: 0.9906792, w: -0.0000004290887}
+      scale: {x: 15.380737, y: 15.380736, z: 15.380736}
+    - name: leaf.096
+      parentName: Zombie Punching(Clone)
+      position: {x: -0.0058198995, y: 8.414313, z: -0.25969034}
+      rotation: {x: -0.000000058998598, y: 0.1362159, z: 0.9906792, w: -0.0000004290887}
+      scale: {x: 15.380737, y: 15.380736, z: 15.380736}
+    - name: leaf.097
+      parentName: Zombie Punching(Clone)
+      position: {x: -0.59258235, y: 8.414313, z: -0.25969034}
+      rotation: {x: -0.000000058998598, y: 0.1362159, z: 0.9906792, w: -0.0000004290887}
+      scale: {x: 15.380737, y: 15.380736, z: 15.380736}
+    - name: leaf.098
+      parentName: Zombie Punching(Clone)
+      position: {x: 1.0099822, y: 8.414313, z: -0.25969034}
+      rotation: {x: -0.000000058998598, y: 0.1362159, z: 0.9906792, w: -0.0000004290887}
+      scale: {x: 15.380737, y: 15.380736, z: 15.380736}
+    - name: leaf.099
+      parentName: Zombie Punching(Clone)
+      position: {x: 1.9599038, y: 8.414313, z: -0.6479778}
+      rotation: {x: -0.000000058998598, y: 0.1362159, z: 0.9906792, w: -0.0000004290887}
+      scale: {x: 15.380737, y: 15.380736, z: 15.380736}
+    - name: leaf.100
+      parentName: Zombie Punching(Clone)
+      position: {x: -1.9724629, y: 8.785755, z: -0.6479778}
+      rotation: {x: 0.00000042313445, y: 0.9906792, z: -0.13621588, w: -0.00000010230257}
+      scale: {x: -15.380737, y: -15.380736, z: -15.380736}
+    - name: leaf.101
+      parentName: Zombie Punching(Clone)
+      position: {x: -1.0225412, y: 8.785755, z: -0.25969034}
+      rotation: {x: 0.00000042313445, y: 0.9906792, z: -0.13621588, w: -0.00000010230257}
+      scale: {x: -15.380737, y: -15.380736, z: -15.380736}
+    - name: leaf.102
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.5800232, y: 8.785755, z: -0.25969034}
+      rotation: {x: 0.00000042313445, y: 0.9906792, z: -0.13621588, w: -0.00000010230257}
+      scale: {x: -15.380737, y: -15.380736, z: -15.380736}
+    - name: leaf.103
+      parentName: Zombie Punching(Clone)
+      position: {x: -0.0067390087, y: 8.785755, z: -0.25969034}
+      rotation: {x: 0.00000042313445, y: 0.9906792, z: -0.13621588, w: -0.00000010230257}
+      scale: {x: -15.380737, y: -15.380736, z: -15.380736}
+    - name: leaf.104
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.8366481, y: 8.785755, z: -0.56504095}
+      rotation: {x: 0.00000042313445, y: 0.9906792, z: -0.13621588, w: -0.00000010230257}
+      scale: {x: -15.380737, y: -15.380736, z: -15.380736}
+    - name: leaf.105
+      parentName: Zombie Punching(Clone)
+      position: {x: -1.5509639, y: 8.785755, z: -0.25969034}
+      rotation: {x: 0.00000042313445, y: 0.9906792, z: -0.13621588, w: -0.00000010230257}
+      scale: {x: -15.380737, y: -15.380736, z: -15.380736}
+    - name: leaf.106
+      parentName: Zombie Punching(Clone)
+      position: {x: -0.50368905, y: 8.785755, z: -0.25969034}
+      rotation: {x: 0.00000042313445, y: 0.9906792, z: -0.13621588, w: -0.00000010230257}
+      scale: {x: -15.380737, y: -15.380736, z: -15.380736}
+    - name: leaf.107
+      parentName: Zombie Punching(Clone)
+      position: {x: -0.50368905, y: 8.785755, z: 0.26186636}
+      rotation: {x: 0.9906792, y: -0.0000004290887, z: 0.000000058998555, w: -0.1362157}
+      scale: {x: 15.380737, y: 15.380737, z: 15.380737}
+    - name: leaf.108
+      parentName: Zombie Punching(Clone)
+      position: {x: -1.5509639, y: 8.785755, z: 0.26186636}
+      rotation: {x: 0.9906792, y: -0.0000004290887, z: 0.000000058998555, w: -0.1362157}
+      scale: {x: 15.380737, y: 15.380737, z: 15.380737}
+    - name: leaf.109
+      parentName: Zombie Punching(Clone)
+      position: {x: -1.9724629, y: 8.785755, z: 0.6501538}
+      rotation: {x: 0.9906792, y: -0.0000004290887, z: 0.000000058998555, w: -0.1362157}
+      scale: {x: 15.380737, y: 15.380737, z: 15.380737}
+    - name: leaf.110
+      parentName: Zombie Punching(Clone)
+      position: {x: -0.0067390087, y: 8.785755, z: 0.26186636}
+      rotation: {x: 0.9906792, y: -0.0000004290887, z: 0.000000058998555, w: -0.1362157}
+      scale: {x: 15.380737, y: 15.380737, z: 15.380737}
+    - name: leaf.111
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.5800232, y: 8.785755, z: 0.26186636}
+      rotation: {x: 0.9906792, y: -0.0000004290887, z: 0.000000058998555, w: -0.1362157}
+      scale: {x: 15.380737, y: 15.380737, z: 15.380737}
+    - name: leaf.112
+      parentName: Zombie Punching(Clone)
+      position: {x: -1.0225412, y: 8.785755, z: 0.26186636}
+      rotation: {x: 0.9906792, y: -0.0000004290887, z: 0.000000058998555, w: -0.1362157}
+      scale: {x: 15.380737, y: 15.380737, z: 15.380737}
+    - name: leaf.113
+      parentName: Zombie Punching(Clone)
+      position: {x: 1.9599038, y: 9.152315, z: -0.6479778}
+      rotation: {x: -0.000000058998598, y: 0.1362159, z: 0.9906792, w: -0.0000004290887}
+      scale: {x: 15.380737, y: 15.380736, z: 15.380736}
+    - name: leaf.114
+      parentName: Zombie Punching(Clone)
+      position: {x: 1.0099822, y: 9.152315, z: -0.25969034}
+      rotation: {x: -0.000000058998598, y: 0.1362159, z: 0.9906792, w: -0.0000004290887}
+      scale: {x: 15.380737, y: 15.380736, z: 15.380736}
+    - name: leaf.115
+      parentName: Zombie Punching(Clone)
+      position: {x: -0.59258235, y: 9.152315, z: -0.25969034}
+      rotation: {x: -0.000000058998598, y: 0.1362159, z: 0.9906792, w: -0.0000004290887}
+      scale: {x: 15.380737, y: 15.380736, z: 15.380736}
+    - name: leaf.116
+      parentName: Zombie Punching(Clone)
+      position: {x: -0.0058198995, y: 9.152315, z: -0.25969034}
+      rotation: {x: -0.000000058998598, y: 0.1362159, z: 0.9906792, w: -0.0000004290887}
+      scale: {x: 15.380737, y: 15.380736, z: 15.380736}
+    - name: leaf.117
+      parentName: Zombie Punching(Clone)
+      position: {x: -0.8492073, y: 9.152315, z: -0.56504095}
+      rotation: {x: -0.000000058998598, y: 0.1362159, z: 0.9906792, w: -0.0000004290887}
+      scale: {x: 15.380737, y: 15.380736, z: 15.380736}
+    - name: leaf.118
+      parentName: Zombie Punching(Clone)
+      position: {x: 1.538405, y: 9.152315, z: -0.25969034}
+      rotation: {x: -0.000000058998598, y: 0.1362159, z: 0.9906792, w: -0.0000004290887}
+      scale: {x: 15.380737, y: 15.380736, z: 15.380736}
+    - name: leaf.119
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.49113014, y: 9.152315, z: -0.25969034}
+      rotation: {x: -0.000000058998598, y: 0.1362159, z: 0.9906792, w: -0.0000004290887}
+      scale: {x: 15.380737, y: 15.380736, z: 15.380736}
+    - name: leaf.120
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.49113014, y: 9.152315, z: 0.26186636}
+      rotation: {x: 0.13621575, y: 0.00000005466875, z: 0.00000039759848, w: 0.9906792}
+      scale: {x: -15.380737, y: -15.380737, z: -15.380737}
+    - name: leaf.121
+      parentName: Zombie Punching(Clone)
+      position: {x: 1.538405, y: 9.152315, z: 0.26186636}
+      rotation: {x: 0.13621575, y: 0.00000005466875, z: 0.00000039759848, w: 0.9906792}
+      scale: {x: -15.380737, y: -15.380737, z: -15.380737}
+    - name: leaf.122
+      parentName: Zombie Punching(Clone)
+      position: {x: 1.9599038, y: 9.152315, z: 0.6501538}
+      rotation: {x: 0.13621575, y: 0.00000005466875, z: 0.00000039759848, w: 0.9906792}
+      scale: {x: -15.380737, y: -15.380737, z: -15.380737}
+    - name: leaf.123
+      parentName: Zombie Punching(Clone)
+      position: {x: -0.0058198995, y: 9.152315, z: 0.26186636}
+      rotation: {x: 0.13621575, y: 0.00000005466875, z: 0.00000039759848, w: 0.9906792}
+      scale: {x: -15.380737, y: -15.380737, z: -15.380737}
+    - name: leaf.124
+      parentName: Zombie Punching(Clone)
+      position: {x: -0.59258235, y: 9.152315, z: 0.26186636}
+      rotation: {x: 0.13621575, y: 0.00000005466875, z: 0.00000039759848, w: 0.9906792}
+      scale: {x: -15.380737, y: -15.380737, z: -15.380737}
+    - name: leaf.125
+      parentName: Zombie Punching(Clone)
+      position: {x: 1.0099822, y: 9.152315, z: 0.26186636}
+      rotation: {x: 0.13621575, y: 0.00000005466875, z: 0.00000039759848, w: 0.9906792}
+      scale: {x: -15.380737, y: -15.380737, z: -15.380737}
+    - name: leaf.126
+      parentName: Zombie Punching(Clone)
+      position: {x: -1.0225412, y: 9.527284, z: 0.26186636}
+      rotation: {x: 0.9906792, y: -0.0000004290887, z: 0.000000058998555, w: -0.1362157}
+      scale: {x: 15.380737, y: 15.380737, z: 15.380737}
+    - name: leaf.127
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.5800232, y: 9.527284, z: 0.26186636}
+      rotation: {x: 0.9906792, y: -0.0000004290887, z: 0.000000058998555, w: -0.1362157}
+      scale: {x: 15.380737, y: 15.380737, z: 15.380737}
+    - name: leaf.128
+      parentName: Zombie Punching(Clone)
+      position: {x: -0.0067390087, y: 9.527284, z: 0.26186636}
+      rotation: {x: 0.9906792, y: -0.0000004290887, z: 0.000000058998555, w: -0.1362157}
+      scale: {x: 15.380737, y: 15.380737, z: 15.380737}
+    - name: leaf.129
+      parentName: Zombie Punching(Clone)
+      position: {x: 1.0099822, y: 9.905339, z: 0.26186636}
+      rotation: {x: 0.13621575, y: 0.00000005466875, z: 0.00000039759848, w: 0.9906792}
+      scale: {x: -15.380737, y: -15.380737, z: -15.380737}
+    - name: leaf.130
+      parentName: Zombie Punching(Clone)
+      position: {x: -1.5509639, y: 9.527284, z: 0.26186636}
+      rotation: {x: 0.9906792, y: -0.0000004290887, z: 0.000000058998555, w: -0.1362157}
+      scale: {x: 15.380737, y: 15.380737, z: 15.380737}
+    - name: leaf.131
+      parentName: Zombie Punching(Clone)
+      position: {x: -0.50368905, y: 9.527284, z: 0.26186636}
+      rotation: {x: 0.9906792, y: -0.0000004290887, z: 0.000000058998555, w: -0.1362157}
+      scale: {x: 15.380737, y: 15.380737, z: 15.380737}
+    - name: leaf.132
+      parentName: Zombie Punching(Clone)
+      position: {x: -0.50368905, y: 9.527284, z: -0.25969034}
+      rotation: {x: 0.00000042313445, y: 0.9906792, z: -0.13621588, w: -0.00000010230257}
+      scale: {x: -15.380737, y: -15.380736, z: -15.380736}
+    - name: leaf.133
+      parentName: Zombie Punching(Clone)
+      position: {x: -1.5509639, y: 9.52728, z: -0.25969034}
+      rotation: {x: 0.00000042313445, y: 0.9906792, z: -0.13621588, w: -0.00000010230257}
+      scale: {x: -15.380737, y: -15.380736, z: -15.380736}
+    - name: leaf.134
+      parentName: Zombie Punching(Clone)
+      position: {x: -0.59258235, y: 9.905339, z: 0.26186636}
+      rotation: {x: 0.13621575, y: 0.00000005466875, z: 0.00000039759848, w: 0.9906792}
+      scale: {x: -15.380737, y: -15.380737, z: -15.380737}
+    - name: leaf.135
+      parentName: Zombie Punching(Clone)
+      position: {x: -0.0067390087, y: 9.527284, z: -0.25969034}
+      rotation: {x: 0.00000042313445, y: 0.9906792, z: -0.13621588, w: -0.00000010230257}
+      scale: {x: -15.380737, y: -15.380736, z: -15.380736}
+    - name: leaf.136
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.5800232, y: 9.527284, z: -0.25969034}
+      rotation: {x: 0.00000042313445, y: 0.9906792, z: -0.13621588, w: -0.00000010230257}
+      scale: {x: -15.380737, y: -15.380736, z: -15.380736}
+    - name: leaf.137
+      parentName: Zombie Punching(Clone)
+      position: {x: -1.0225412, y: 9.52728, z: -0.25969034}
+      rotation: {x: 0.00000042313445, y: 0.9906792, z: -0.13621588, w: -0.00000010230257}
+      scale: {x: -15.380737, y: -15.380736, z: -15.380736}
+    - name: leaf.138
+      parentName: Zombie Punching(Clone)
+      position: {x: -0.0058198995, y: 9.905339, z: 0.26186636}
+      rotation: {x: 0.13621575, y: 0.00000005466875, z: 0.00000039759848, w: 0.9906792}
+      scale: {x: -15.380737, y: -15.380737, z: -15.380737}
+    - name: leaf.139
+      parentName: Zombie Punching(Clone)
+      position: {x: -1.0225412, y: 10.289283, z: -0.25969034}
+      rotation: {x: 0.00000042313445, y: 0.9906792, z: -0.13621588, w: -0.00000010230257}
+      scale: {x: -15.380737, y: -15.380736, z: -15.380736}
+    - name: leaf.140
+      parentName: Zombie Punching(Clone)
+      position: {x: 1.538405, y: 9.905339, z: 0.26186636}
+      rotation: {x: 0.13621575, y: 0.00000005466875, z: 0.00000039759848, w: 0.9906792}
+      scale: {x: -15.380737, y: -15.380737, z: -15.380737}
+    - name: leaf.141
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.49113014, y: 9.905339, z: 0.26186636}
+      rotation: {x: 0.13621575, y: 0.00000005466875, z: 0.00000039759848, w: 0.9906792}
+      scale: {x: -15.380737, y: -15.380737, z: -15.380737}
+    - name: leaf.142
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.49113014, y: 9.905339, z: -0.25969034}
+      rotation: {x: -0.000000058998598, y: 0.1362159, z: 0.9906792, w: -0.0000004290887}
+      scale: {x: 15.380737, y: 15.380736, z: 15.380736}
+    - name: leaf.143
+      parentName: Zombie Punching(Clone)
+      position: {x: 1.538405, y: 9.905339, z: -0.25969034}
+      rotation: {x: -0.000000058998598, y: 0.1362159, z: 0.9906792, w: -0.0000004290887}
+      scale: {x: 15.380737, y: 15.380736, z: 15.380736}
+    - name: leaf.144
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.5800232, y: 10.289283, z: -0.25969034}
+      rotation: {x: 0.00000042313445, y: 0.9906792, z: -0.13621588, w: -0.00000010230257}
+      scale: {x: -15.380737, y: -15.380736, z: -15.380736}
+    - name: leaf.145
+      parentName: Zombie Punching(Clone)
+      position: {x: -0.0058198995, y: 10.666449, z: -0.25969034}
+      rotation: {x: -0.000000058998598, y: 0.1362159, z: 0.9906792, w: -0.0000004290887}
+      scale: {x: 15.380737, y: 15.380736, z: 15.380736}
+    - name: leaf.146
+      parentName: Zombie Punching(Clone)
+      position: {x: -0.59258235, y: 9.905339, z: -0.25969034}
+      rotation: {x: -0.000000058998598, y: 0.1362159, z: 0.9906792, w: -0.0000004290887}
+      scale: {x: 15.380737, y: 15.380736, z: 15.380736}
+    - name: leaf.147
+      parentName: Zombie Punching(Clone)
+      position: {x: 1.0099822, y: 9.905339, z: -0.25969034}
+      rotation: {x: -0.000000058998598, y: 0.1362159, z: 0.9906792, w: -0.0000004290887}
+      scale: {x: 15.380737, y: 15.380736, z: 15.380736}
+    - name: leaf.148
+      parentName: Zombie Punching(Clone)
+      position: {x: -0.0067390087, y: 10.289283, z: -0.25969034}
+      rotation: {x: 0.00000042313445, y: 0.9906792, z: -0.13621588, w: -0.00000010230257}
+      scale: {x: -15.380737, y: -15.380736, z: -15.380736}
+    - name: leaf.149
+      parentName: Zombie Punching(Clone)
+      position: {x: -1.5509639, y: 10.289283, z: -0.25969034}
+      rotation: {x: 0.00000042313445, y: 0.9906792, z: -0.13621588, w: -0.00000010230257}
+      scale: {x: -15.380737, y: -15.380736, z: -15.380736}
+    - name: leaf.150
+      parentName: Zombie Punching(Clone)
+      position: {x: -0.50368905, y: 10.289283, z: -0.25969034}
+      rotation: {x: 0.00000042313445, y: 0.9906792, z: -0.13621588, w: -0.00000010230257}
+      scale: {x: -15.380737, y: -15.380736, z: -15.380736}
+    - name: leaf.151
+      parentName: Zombie Punching(Clone)
+      position: {x: -0.50368905, y: 10.289283, z: 0.26186636}
+      rotation: {x: 0.9906792, y: -0.0000004290887, z: 0.000000058998555, w: -0.1362157}
+      scale: {x: 15.380737, y: 15.380737, z: 15.380737}
+    - name: leaf.152
+      parentName: Zombie Punching(Clone)
+      position: {x: -1.5509639, y: 10.289283, z: 0.26186636}
+      rotation: {x: 0.9906792, y: -0.0000004290887, z: 0.000000058998555, w: -0.1362157}
+      scale: {x: 15.380737, y: 15.380737, z: 15.380737}
+    - name: leaf.153
+      parentName: Zombie Punching(Clone)
+      position: {x: -0.0067390087, y: 10.289283, z: 0.26186636}
+      rotation: {x: 0.9906792, y: -0.0000004290887, z: 0.000000058998555, w: -0.1362157}
+      scale: {x: 15.380737, y: 15.380737, z: 15.380737}
+    - name: leaf.154
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.5800232, y: 10.289283, z: 0.26186636}
+      rotation: {x: 0.9906792, y: -0.0000004290887, z: 0.000000058998555, w: -0.1362157}
+      scale: {x: 15.380737, y: 15.380737, z: 15.380737}
+    - name: leaf.155
+      parentName: Zombie Punching(Clone)
+      position: {x: -1.0225412, y: 10.289283, z: 0.26186636}
+      rotation: {x: 0.9906792, y: -0.0000004290887, z: 0.000000058998555, w: -0.1362157}
+      scale: {x: 15.380737, y: 15.380737, z: 15.380737}
+    - name: leaf.156
+      parentName: Zombie Punching(Clone)
+      position: {x: 1.0099822, y: 10.6664, z: -0.25969034}
+      rotation: {x: -0.000000058998598, y: 0.1362159, z: 0.9906792, w: -0.0000004290887}
+      scale: {x: 15.380737, y: 15.380736, z: 15.380736}
+    - name: leaf.157
+      parentName: Zombie Punching(Clone)
+      position: {x: -0.0058198995, y: 9.905339, z: -0.25969034}
+      rotation: {x: -0.000000058998598, y: 0.1362159, z: 0.9906792, w: -0.0000004290887}
+      scale: {x: 15.380737, y: 15.380736, z: 15.380736}
+    - name: leaf.158
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.49113014, y: 10.666449, z: -0.25969034}
+      rotation: {x: -0.000000058998598, y: 0.1362159, z: 0.9906792, w: -0.0000004290887}
+      scale: {x: 15.380737, y: 15.380736, z: 15.380736}
+    - name: leaf.159
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.49113014, y: 10.665475, z: 0.26186636}
+      rotation: {x: 0.13621575, y: 0.00000005466875, z: 0.00000039759848, w: 0.9906792}
+      scale: {x: -15.380737, y: -15.380737, z: -15.380737}
+    - name: leaf.160
+      parentName: Zombie Punching(Clone)
+      position: {x: -0.0058198995, y: 10.665475, z: 0.26186636}
+      rotation: {x: 0.13621575, y: 0.00000005466875, z: 0.00000039759848, w: 0.9906792}
+      scale: {x: -15.380737, y: -15.380737, z: -15.380737}
+    - name: leaf.161
+      parentName: Zombie Punching(Clone)
+      position: {x: 1.0099822, y: 10.665475, z: 0.26186636}
+      rotation: {x: 0.13621575, y: 0.00000005466875, z: 0.00000039759848, w: 0.9906792}
+      scale: {x: -15.380737, y: -15.380737, z: -15.380737}
+    - name: leaf.162
+      parentName: Zombie Punching(Clone)
+      position: {x: 1.538405, y: 10.6664, z: -0.25969034}
+      rotation: {x: -0.000000058998598, y: 0.1362159, z: 0.9906792, w: -0.0000004290887}
+      scale: {x: 15.380737, y: 15.380736, z: 15.380736}
+    - name: leaf.163
+      parentName: Zombie Punching(Clone)
+      position: {x: 1.538405, y: 10.6664, z: 0.26186636}
+      rotation: {x: 0.13621575, y: 0.00000005466875, z: 0.00000039759848, w: 0.9906792}
+      scale: {x: -15.380737, y: -15.380737, z: -15.380737}
+    - name: leaf.164
+      parentName: Zombie Punching(Clone)
+      position: {x: -1.6247686, y: 10.6664, z: 0.26565254}
+      rotation: {x: 0.9906706, y: -0.00056804926, z: -0.004127524, w: -0.13621466}
+      scale: {x: 15.380737, y: 15.380736, z: 15.380736}
+    - name: leaf.165
+      parentName: Zombie Punching(Clone)
+      position: {x: -0.59258235, y: 10.6664, z: -0.25969034}
+      rotation: {x: -0.000000058998598, y: 0.1362159, z: 0.9906792, w: -0.0000004290887}
+      scale: {x: 15.380737, y: 15.380736, z: 15.380736}
+    - name: leaf
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.03040585, y: 11.634279, z: 0.25440586}
+      rotation: {x: 0.00000022598016, y: -0.00000022542882, z: -0.75183165, w: 0.6593551}
+      scale: {x: 7.211681, y: 10.165801, z: 10.165801}
+    - name: leaf.001
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.03040585, y: 11.634279, z: 0.25440586}
+      rotation: {x: 0.00000008142997, y: 0.000000008055427, z: -0.0035780019, w: 0.9999936}
+      scale: {x: 7.2116766, y: 10.1658, z: 10.165801}
+    - name: leaf.002
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.03040585, y: 11.634279, z: 0.25440586}
+      rotation: {x: -0.00000015881204, y: -9.345814e-10, z: 0.9918616, w: -0.12732098}
+      scale: {x: 10.040489, y: 16.256577, z: 16.256575}
+    - name: leaf.003
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.03040585, y: 11.634279, z: 0.25440586}
+      rotation: {x: 0.0000000417743, y: 0.000000005897649, z: 0.55363804, w: 0.8327574}
+      scale: {x: 16.79608, y: 18.819035, z: 18.81903}
+    - name: leaf.004
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.03040585, y: 11.634279, z: 0.25440586}
+      rotation: {x: -0.000000048725685, y: 0.000000046771866, z: -0.45165336, w: 0.8921935}
+      scale: {x: 16.256573, y: 16.256573, z: 16.256575}
+    - name: leaf.005
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.03040585, y: 11.634279, z: 0.25440586}
+      rotation: {x: -0.0000002481382, y: 0.00000009618527, z: 0.9113971, w: -0.41152805}
+      scale: {x: 8.208837, y: 10.218518, z: 10.218521}
+    - name: leaf.006
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.03040585, y: 11.634279, z: 0.25440586}
+      rotation: {x: 0.00000035846094, y: 0.0000004180234, z: 0.8235193, w: 0.5672883}
+      scale: {x: 7.2116785, y: 10.165803, z: 10.165801}
+    - name: leaf.007
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.03040585, y: 11.634279, z: 0.25440586}
+      rotation: {x: 0.000000021094253, y: 4.9212173e-10, z: 0.15929647, w: 0.9872308}
+      scale: {x: 10.1658, y: 10.1658, z: 10.165801}
+    - name: leaf.008
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.03040585, y: 11.634279, z: 0.25440586}
+      rotation: {x: 0.00000028433, y: 0.00000008764886, z: 0.98384356, w: 0.1790303}
+      scale: {x: 10.218519, y: 10.218519, z: 10.218521}
+    - name: leaf.009
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.03040585, y: 11.634279, z: 0.25440586}
+      rotation: {x: -0.000000037582204, y: -0.0000000035442427, z: 0.093889825, w: 0.99558264}
+      scale: {x: 16.256575, y: 16.256575, z: 16.256575}
+    - name: leaf.010
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.03040585, y: 11.634279, z: 0.25440586}
+      rotation: {x: 0.000000021320169, y: 0.000000015242872, z: 0.5052432, w: 0.862977}
+      scale: {x: 13.49062, y: 15.38074, z: 15.380737}
+    - name: leaf.011
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.03040585, y: 11.634279, z: 0.25440586}
+      rotation: {x: 0.00000006399162, y: 0.00000013272292, z: 0.814914, w: 0.5795819}
+      scale: {x: 11.889137, y: 16.256577, z: 16.256575}
+    - name: leaf.012
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.03040585, y: 11.634279, z: 0.25440586}
+      rotation: {x: -0.009411037, y: -0.07275264, z: 0.98906463, w: 0.12794425}
+      scale: {x: 11.060723, y: 12.382648, z: 12.382649}
+    - name: leaf.013
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.03040585, y: 11.634279, z: 0.25440586}
+      rotation: {x: -0.00000022327279, y: 0.000000042374783, z: 0.91066915, w: -0.41313648}
+      scale: {x: 13.976631, y: 13.449041, z: 13.44904}
+    - name: leaf.014
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.03040585, y: 11.634279, z: 0.25440586}
+      rotation: {x: -0.0000000057030687, y: 0.000000028150106, z: -0.52348804, w: 0.852033}
+      scale: {x: 15.380737, y: 15.380737, z: 15.380737}
+    - name: leaf.015
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.03040585, y: 11.634279, z: 0.25440586}
+      rotation: {x: 0.3368669, y: 0.10145945, z: 0.2699525, w: 0.89629924}
+      scale: {x: 6.5929437, y: 10.943594, z: 10.943594}
+    - name: leaf.016
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.03040585, y: 11.634279, z: 0.25440586}
+      rotation: {x: 0.19694108, y: 0.20202446, z: 0.6869684, w: 0.6696827}
+      scale: {x: 7.1939406, y: 9.027789, z: 8.817135}
+    - name: leaf.017
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.03040585, y: 11.634279, z: 0.25440586}
+      rotation: {x: 0.11235684, y: 0.33339074, z: 0.88705003, w: 0.29894617}
+      scale: {x: 5.7475905, y: 10.314697, z: 10.314698}
+    - name: leaf.018
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.03040585, y: 11.634279, z: 0.25440586}
+      rotation: {x: -0.09374144, y: 0.33909562, z: 0.9022294, w: -0.24941683}
+      scale: {x: 5.7475915, y: 10.314698, z: 10.314697}
+    - name: leaf.019
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.03040585, y: 11.634279, z: 0.25440586}
+      rotation: {x: 0.16875173, y: -0.2261035, z: -0.76884615, w: 0.57382554}
+      scale: {x: 7.1939416, y: 9.027786, z: 8.817132}
+    - name: leaf.020
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.03040585, y: 11.634279, z: 0.25440586}
+      rotation: {x: 0.2755974, y: -0.06038159, z: -0.20532264, w: 0.9371461}
+      scale: {x: 7.193943, y: 9.027787, z: 8.817134}
+    - name: base.005
+      parentName: Zombie Punching(Clone)
+      position: {x: -2.2299206, y: 6.133192, z: 1.42046}
+      rotation: {x: 0.26077917, y: -0.13672806, z: 0.6723991, w: 0.6791017}
+      scale: {x: -7.5, y: -7.5000005, z: -7.500001}
+    - name: stem.005
+      parentName: Zombie Punching(Clone)
+      position: {x: -2.2076135, y: 6.0305905, z: 1.5423433}
+      rotation: {x: 0.39224744, y: -0.2971033, z: 0.54108274, w: 0.6819832}
+      scale: {x: -7.5000005, y: -7.4999995, z: -7.5000005}
+    - name: base.004
+      parentName: Zombie Punching(Clone)
+      position: {x: -2.28005, y: 5.92052, z: 1.0273514}
+      rotation: {x: 0.54995936, y: -0.39130598, z: 0.38883737, w: 0.6270804}
+      scale: {x: -7.5, y: -7.500001, z: -7.5}
+    - name: stem.004
+      parentName: Zombie Punching(Clone)
+      position: {x: -2.2886622, y: 5.760923, z: 1.0591228}
+      rotation: {x: 0.39224744, y: -0.2971033, z: 0.54108274, w: 0.6819832}
+      scale: {x: -7.5000005, y: -7.4999995, z: -7.5000005}
+    - name: stem.007
+      parentName: Zombie Punching(Clone)
+      position: {x: -2.4554553, y: 5.8553534, z: 1.4722846}
+      rotation: {x: 0.4965267, y: 0.021678815, z: 0.037850738, w: 0.8669248}
+      scale: {x: -7.5000005, y: -7.500001, z: -7.5}
+    - name: mid.003
+      parentName: Zombie Punching(Clone)
+      position: {x: -2.43745, y: 5.984959, z: 1.3970085}
+      rotation: {x: 0.49510852, y: -0.043316387, z: -0.07562947, w: 0.8644486}
+      scale: {x: -7.5000005, y: -7.5000005, z: -7.5000005}
+    - name: base.007
+      parentName: Zombie Punching(Clone)
+      position: {x: -2.3855052, y: 6.1031046, z: 1.3216963}
+      rotation: {x: 0.48521882, y: -0.10757045, z: -0.18781564, w: 0.8471816}
+      scale: {x: -7.5000005, y: -7.5000005, z: -7.5000005}
+    - name: stem.006
+      parentName: Zombie Punching(Clone)
+      position: {x: -2.4742916, y: 5.7485294, z: 1.2892725}
+      rotation: {x: 0.4965267, y: 0.021678815, z: 0.037850738, w: 0.8669248}
+      scale: {x: -7.5000005, y: -7.500001, z: -7.5}
+    - name: mid.002
+      parentName: Zombie Punching(Clone)
+      position: {x: -2.4564908, y: 5.876976, z: 1.2127877}
+      rotation: {x: 0.49510852, y: -0.043316387, z: -0.07562947, w: 0.8644486}
+      scale: {x: -7.5000005, y: -7.5000005, z: -7.5000005}
+    - name: base.006
+      parentName: Zombie Punching(Clone)
+      position: {x: -2.415561, y: 6.0021243, z: 1.1350775}
+      rotation: {x: 0.48521882, y: -0.10757045, z: -0.18781564, w: 0.8471816}
+      scale: {x: -7.5000005, y: -7.5000005, z: -7.5000005}
+    - name: stem
+      parentName: Zombie Punching(Clone)
+      position: {x: 2.1996899, y: 6.0305905, z: 1.5423433}
+      rotation: {x: 0.6819831, y: -0.54108286, z: -0.29710338, w: -0.39224744}
+      scale: {x: 7.5000005, y: 7.4999995, z: 7.5000005}
+    - name: base
+      parentName: Zombie Punching(Clone)
+      position: {x: 2.221997, y: 6.133192, z: 1.42046}
+      rotation: {x: 0.67910177, y: -0.67239904, z: -0.1367281, w: -0.26077917}
+      scale: {x: 7.5000005, y: 7.5000005, z: 7.5000005}
+    - name: stem.001
+      parentName: Zombie Punching(Clone)
+      position: {x: 2.2807384, y: 5.760923, z: 1.0591228}
+      rotation: {x: 0.6819831, y: -0.54108286, z: -0.29710338, w: -0.39224744}
+      scale: {x: 7.5000005, y: 7.4999995, z: 7.5000005}
+    - name: base.001
+      parentName: Zombie Punching(Clone)
+      position: {x: 2.2721264, y: 5.92052, z: 1.0273514}
+      rotation: {x: -0.62708056, y: 0.38883728, z: 0.39130586, w: 0.54995936}
+      scale: {x: 7.5000005, y: 7.5, z: 7.5}
+    - name: base.003
+      parentName: Zombie Punching(Clone)
+      position: {x: 2.3775818, y: 6.1031046, z: 1.3216963}
+      rotation: {x: 0.84718156, y: 0.18781567, z: -0.107570425, w: -0.48521882}
+      scale: {x: 7.5000005, y: 7.5000005, z: 7.5000005}
+    - name: mid.001
+      parentName: Zombie Punching(Clone)
+      position: {x: 2.4295266, y: 5.984959, z: 1.3970085}
+      rotation: {x: 0.8644486, y: 0.07562946, z: -0.043316383, w: -0.49510854}
+      scale: {x: 7.5000005, y: 7.5000005, z: 7.5000005}
+    - name: stem.003
+      parentName: Zombie Punching(Clone)
+      position: {x: 2.4475317, y: 5.8553534, z: 1.4722846}
+      rotation: {x: 0.8669248, y: -0.037850745, z: 0.02167882, w: -0.49652663}
+      scale: {x: 7.5000005, y: 7.500001, z: 7.5}
+    - name: base.002
+      parentName: Zombie Punching(Clone)
+      position: {x: 2.4076371, y: 6.0021243, z: 1.1350775}
+      rotation: {x: 0.84718156, y: 0.18781567, z: -0.107570425, w: -0.48521882}
+      scale: {x: 7.5000005, y: 7.5000005, z: 7.5000005}
+    - name: mid
+      parentName: Zombie Punching(Clone)
+      position: {x: 2.448567, y: 5.876976, z: 1.2127877}
+      rotation: {x: 0.8644486, y: 0.07562946, z: -0.043316383, w: -0.49510854}
+      scale: {x: 7.5000005, y: 7.5000005, z: 7.5000005}
+    - name: stem.002
+      parentName: Zombie Punching(Clone)
+      position: {x: 2.4663677, y: 5.7485294, z: 1.2892725}
+      rotation: {x: 0.8669248, y: -0.037850745, z: 0.02167882, w: -0.49652663}
+      scale: {x: 7.5000005, y: 7.500001, z: 7.5}
+    - name: head
+      parentName: Zombie Punching(Clone)
+      position: {x: -0, y: 12.013657, z: 0.5}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: leftEar
+      parentName: Zombie Punching(Clone)
+      position: {x: -0.38043997, y: 11.677924, z: 0.622749}
+      rotation: {x: -0.6706354, y: 0.22416112, z: -0.22416112, w: 0.67063534}
+      scale: {x: 100.00001, y: 100, z: 100.00001}
+    - name: rightEar
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.38043997, y: 11.677924, z: 0.622749}
+      rotation: {x: -0.6706354, y: -0.22416112, z: 0.22416112, w: 0.67063534}
+      scale: {x: 100.00001, y: 100, z: 100.00001}
+    - name: neck
+      parentName: Zombie Punching(Clone)
+      position: {x: -0, y: 10.962881, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 25, y: 25, z: 39}
+    - name: leftForearm
+      parentName: Zombie Punching(Clone)
+      position: {x: -1.918055, y: 8.131986, z: 0}
+      rotation: {x: 0.86273, y: -0.07547911, z: 0.04357788, w: -0.49809724}
+      scale: {x: 25, y: 25, z: 30}
+    - name: rightHand
+      parentName: Zombie Punching(Clone)
+      position: {x: 2.2052608, y: 6.536812, z: 0.9404324}
+      rotation: {x: 0.5566703, y: 0.6634141, z: 0.32139376, w: -0.38302228}
+      scale: {x: 29, y: 15.000001, z: 5}
+    - name: rightPot
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.84, y: 0.58330876, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 59.72608, y: 59.72608, z: 59.72608}
+    - name: leftPot
+      parentName: Zombie Punching(Clone)
+      position: {x: -0.84, y: 0.58330876, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 59.72608, y: 59.72608, z: 59.72608}
+    - name: rightLowerLeg
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.84, y: 3.1036, z: 0}
+      rotation: {x: -0.00000005338508, y: 0.7071068, z: -0.7071067, w: 0.000000053385072}
+      scale: {x: 35, y: 35, z: 35}
+    - name: rightUpperLeg
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.84, y: 5.623519, z: 0}
+      rotation: {x: -0.00000005338508, y: 0.7071068, z: -0.7071067, w: 0.000000053385072}
+      scale: {x: 35, y: 35, z: 35}
+    - name: rightEye
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.45, y: 12.3, z: 0.58215606}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 5, y: 5, z: 5}
+    - name: leftEye
+      parentName: Zombie Punching(Clone)
+      position: {x: -0.45, y: 12.3, z: 0.58215606}
+      rotation: {x: 0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: -5, y: -5, z: -5}
+    - name: flowerStem
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.03040585, y: 11.634279, z: 0.25440586}
+      rotation: {x: 0.99558264, y: 0.093889825, z: -0.000000018281023, w: -0.0000001938471}
+      scale: {x: 4.570692, y: 4.570692, z: 4.570692}
+    - name: flowerCenter
+      parentName: Zombie Punching(Clone)
+      position: {x: 0.03040585, y: 11.634279, z: 0.25440586}
+      rotation: {x: 0.0049002348, y: -0.051959645, z: 0.09376182, w: 0.9942258}
+      scale: {x: 5.62338, y: 5.5899267, z: 8.653677}
+    - name: leftUpperLeg
+      parentName: Zombie Punching(Clone)
+      position: {x: -0.84, y: 5.623519, z: 0}
+      rotation: {x: -0.00000005338508, y: 0.7071068, z: -0.7071067, w: 0.000000053385072}
+      scale: {x: 35, y: 35, z: 35}
+    - name: leftLowerLeg
+      parentName: Zombie Punching(Clone)
+      position: {x: -0.84, y: 3.1036, z: 0}
+      rotation: {x: -0.00000005338508, y: 0.7071068, z: -0.7071067, w: 0.000000053385072}
+      scale: {x: 35, y: 35, z: 35}
+    - name: body
+      parentName: Zombie Punching(Clone)
+      position: {x: -0, y: 10.2699995, z: 0}
+      rotation: {x: -0.00000005338508, y: 0.7071068, z: -0.7071067, w: 0.000000053385072}
+      scale: {x: 125, y: 40, z: 40}
+    - name: rightUpperArm
+      parentName: Zombie Punching(Clone)
+      position: {x: 1.54554, y: 10.25, z: 0}
+      rotation: {x: -0.70441604, y: -0.06162842, z: 0.06162842, w: 0.70441604}
+      scale: {x: 30.000002, y: 30.000002, z: 30.000002}
+    - name: rightShoulder
+      parentName: Zombie Punching(Clone)
+      position: {x: 1.25096, y: 10.25, z: 0.000000012876271}
+      rotation: {x: 0.7059307, y: -0.04076558, z: -0.040765475, w: 0.7059307}
+      scale: {x: 30.000004, y: 30.000002, z: 30.000004}
+    - name: leftUpperArm
+      parentName: Zombie Punching(Clone)
+      position: {x: -1.54554, y: 10.25, z: -0.000000012876271}
+      rotation: {x: 0.061628323, y: 0.70441604, z: 0.70441604, w: 0.061628424}
+      scale: {x: 30.000002, y: 30.000002, z: 30.000002}
+    - name: leftShoulder
+      parentName: Zombie Punching(Clone)
+      position: {x: -1.25096, y: 10.25, z: 0.000000012876271}
+      rotation: {x: -0.040767383, y: 0.7059307, z: 0.7059306, w: -0.04076727}
+      scale: {x: 30.000002, y: 30.000002, z: 30.000002}
+    - name: rightForearm
+      parentName: Zombie Punching(Clone)
+      position: {x: 1.91806, y: 8.131986, z: 0}
+      rotation: {x: 0.86273, y: 0.07547911, z: -0.04357788, w: -0.49809724}
+      scale: {x: 25, y: 25, z: 30}
+    - name: leftHand
+      parentName: Zombie Punching(Clone)
+      position: {x: -2.2131844, y: 6.536812, z: 0.9404324}
+      rotation: {x: 0.3830223, y: 0.32139373, z: -0.6634139, w: 0.5566705}
+      scale: {x: -29, y: -15.000001, z: -5}
+    - name: mixamorig:Hips
+      parentName: Zombie Punching(Clone)
+      position: {x: 0, y: 7.143709, z: -0.31784806}
+      rotation: {x: -0.0000000048204942, y: -0.000000028581175, z: 0.000000009730604, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 1.0000001}
+    - name: mixamorig:RightUpLeg
+      parentName: mixamorig:Hips
+      position: {x: 0.8293119, y: -0.39370728, z: 0.024847595}
+      rotation: {x: -0.00000040366095, y: -0.00033473322, z: 0.99999905, w: -0.0013489483}
+      scale: {x: 1.0000046, y: 1.0000039, z: 1}
+    - name: mixamorig:RightLeg
+      parentName: mixamorig:RightUpLeg
+      position: {x: 2.4537228e-10, y: 3.2969594, z: 9.134e-11}
+      rotation: {x: 0.00067517237, y: -0.0000006442041, z: -0.0009607113, w: 0.99999934}
+      scale: {x: 1.0000011, y: 1.0000011, z: 1.0000001}
+    - name: mixamorig:RightFoot
+      parentName: mixamorig:RightLeg
+      position: {x: 1.2463658e-10, y: 3.2573404, z: -1.2591612e-11}
+      rotation: {x: 0.7055498, y: 0.09149859, z: -0.09259731, w: 0.6966013}
+      scale: {x: 0.9999997, y: 1, z: 0.9999998}
+    - name: mixamorig:RightToeBase
+      parentName: mixamorig:RightFoot
+      position: {x: 0.0000000022829292, y: 0.06934197, z: -1.9168249e-11}
+      rotation: {x: 0.022253988, y: -0.0022585688, z: -0.10094273, w: 0.99464077}
+      scale: {x: 1.0000017, y: 1.000001, z: 1.0000017}
+    - name: mixamorig:RightToe_End
+      parentName: mixamorig:RightToeBase
+      position: {x: 1.1184141e-10, y: 0.065577604, z: -4.35079e-11}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:LeftUpLeg
+      parentName: mixamorig:Hips
+      position: {x: -0.8293119, y: -0.39370728, z: 0.02895477}
+      rotation: {x: 0.0000008453479, y: -0.0006032565, z: 0.9999989, w: 0.0013489344}
+      scale: {x: 1.0000051, y: 1.0000044, z: 0.9999998}
+    - name: mixamorig:LeftLeg
+      parentName: mixamorig:LeftUpLeg
+      position: {x: 3.5645598e-10, y: 3.2969613, z: 1.3710731e-10}
+      rotation: {x: 0.0005098556, y: 0.00000048308334, z: 0.0009607106, w: 0.99999946}
+      scale: {x: 1.0000005, y: 1.0000006, z: 1}
+    - name: mixamorig:LeftFoot
+      parentName: mixamorig:LeftLeg
+      position: {x: -5.1580712e-11, y: 3.2573397, z: 4.247641e-11}
+      rotation: {x: 0.70242965, y: -0.09688234, z: 0.097446516, w: 0.6983628}
+      scale: {x: 1.0000001, y: 1, z: 0.99999976}
+    - name: mixamorig:LeftToeBase
+      parentName: mixamorig:LeftFoot
+      position: {x: 0.0000000026532934, y: 0.16910507, z: -8.923164e-12}
+      rotation: {x: 0.008958397, y: 0.00024413312, z: 0.027241262, w: 0.9995887}
+      scale: {x: 1.0000019, y: 1.0000006, z: 1.0000014}
+    - name: mixamorig:LeftToe_End
+      parentName: mixamorig:LeftToeBase
+      position: {x: -4.7853205e-10, y: 0.16172233, z: -1.3142758e-11}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:Spine
+      parentName: mixamorig:Hips
+      position: {x: -0, y: 0.7116302, z: 0.005592986}
+      rotation: {x: 0.003929607, y: 0.000000039854704, z: -0.000000007842538, w: 0.9999923}
+      scale: {x: 1.0000001, y: 1.0000099, z: 1}
+    - name: mixamorig:Spine1
+      parentName: mixamorig:Spine
+      position: {x: -0, y: 0.83026, z: -1.6308434e-10}
+      rotation: {x: -9.3132246e-10, y: -0.0000000074314377, z: 0.0000000042546913, w: 1}
+      scale: {x: 0.99999964, y: 0.9999991, z: 0.9999995}
+    - name: mixamorig:Spine2
+      parentName: mixamorig:Spine1
+      position: {x: -0, y: 0.948869, z: 5.6985683e-10}
+      rotation: {x: 1.8330415e-17, y: 0.000000011634798, z: -0.0000000033601055, w: 1}
+      scale: {x: 1, y: 1.0000005, z: 1.0000001}
+    - name: mixamorig:RightShoulder
+      parentName: mixamorig:Spine2
+      position: {x: 0.41698706, y: 0.9707028, z: 0.0024407355}
+      rotation: {x: 0.55174917, y: 0.44294962, z: -0.54857993, w: 0.44545326}
+      scale: {x: 1.0000036, y: 1.0000032, z: 1.000003}
+    - name: mixamorig:RightArm
+      parentName: mixamorig:RightShoulder
+      position: {x: -2.4578038e-11, y: 0.8585009, z: -0.0000000036763095}
+      rotation: {x: -0.09390589, y: -0.008311776, z: -0.0014847812, w: 0.99554527}
+      scale: {x: 1.0000012, y: 1.0000017, z: 1.0000037}
+    - name: mixamorig:RightForeArm
+      parentName: mixamorig:RightArm
+      position: {x: 0.000000001464526, y: 2.0480325, z: 0.000000003701532}
+      rotation: {x: -0.0062236628, y: 0.13367337, z: 0.029377053, w: 0.9905704}
+      scale: {x: 1.0000014, y: 0.9999978, z: 1.0000001}
+    - name: mixamorig:RightHand
+      parentName: mixamorig:RightForeArm
+      position: {x: 0.00000000855847, y: 1.918241, z: 0.000000008200665}
+      rotation: {x: 0.04318696, y: 0.31247535, z: 0.013693426, w: -0.94884485}
+      scale: {x: 1.0000046, y: 1.0000087, z: 1.000002}
+    - name: mixamorig:RightHandIndex1
+      parentName: mixamorig:RightHand
+      position: {x: -0.1767337, y: 0.6230034, z: 0.025752187}
+      rotation: {x: -0.057951592, y: -0.0015834272, z: 0.027266905, w: 0.9979458}
+      scale: {x: 1.0000004, y: 1, z: 1.0000002}
+    - name: mixamorig:RightHandIndex2
+      parentName: mixamorig:RightHandIndex1
+      position: {x: 0.0020152542, y: 0.19541307, z: 0.00000000946787}
+      rotation: {x: 0.03689803, y: -0.00019951725, z: -0.008921577, w: 0.99927914}
+      scale: {x: 1.0000004, y: 1.000002, z: 1.0000007}
+    - name: mixamorig:RightHandIndex3
+      parentName: mixamorig:RightHandIndex2
+      position: {x: -0.0027154267, y: 0.18633713, z: 0.0000000048197544}
+      rotation: {x: -0.03845958, y: 0.0002886762, z: 0.00600857, w: 0.99924207}
+      scale: {x: 1.0000001, y: 0.99999994, z: 1.0000005}
+    - name: mixamorig:RightHandIndex4
+      parentName: mixamorig:RightHandIndex3
+      position: {x: 0.0007001636, y: 0.13817711, z: -0.000000002123508}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:RightHandRing1
+      parentName: mixamorig:RightHand
+      position: {x: 0.15322232, y: 0.61581266, z: 0.02450622}
+      rotation: {x: 0.024187472, y: -0.0036472972, z: -0.083251916, w: 0.99622834}
+      scale: {x: 0.99999994, y: 1.0000012, z: 1}
+    - name: mixamorig:RightHandRing2
+      parentName: mixamorig:RightHandRing1
+      position: {x: 0.00051021937, y: 0.14393073, z: -0.0000000011022004}
+      rotation: {x: 0.042414986, y: 0.000000004656612, z: -0.0000000152213, w: 0.9991001}
+      scale: {x: 1.0000015, y: 1.0000001, z: 1.0000007}
+    - name: mixamorig:RightHandRing3
+      parentName: mixamorig:RightHandRing2
+      position: {x: -0.000449414, y: 0.15621884, z: -9.608019e-10}
+      rotation: {x: -0.017948113, y: -0.00000008449784, z: 0.00000007690822, w: 0.99983895}
+      scale: {x: 1.0000007, y: 1.0000001, z: 1.0000004}
+    - name: mixamorig:RightHandRing4
+      parentName: mixamorig:RightHandRing3
+      position: {x: -0.000060793696, y: 0.11044503, z: -9.991638e-10}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:RightHandMiddle1
+      parentName: mixamorig:RightHand
+      position: {x: 0.023511393, y: 0.61059576, z: -0.029206064}
+      rotation: {x: -0.09805527, y: -0.0032935732, z: 0.03340809, w: 0.99461466}
+      scale: {x: 0.9999985, y: 0.9999985, z: 0.99999994}
+    - name: mixamorig:RightHandMiddle2
+      parentName: mixamorig:RightHandMiddle1
+      position: {x: 0.0039584613, y: 0.20347223, z: 4.4277726e-10}
+      rotation: {x: 0.0349874, y: 0.00041365562, z: -0.012955693, w: 0.99930376}
+      scale: {x: 1.0000005, y: 1.000001, z: 1.0000006}
+    - name: mixamorig:RightHandMiddle3
+      parentName: mixamorig:RightHandMiddle2
+      position: {x: -0.0026921462, y: 0.2029667, z: -0.000000002981191}
+      rotation: {x: -0.026525259, y: 0.0000000017448067, z: -0.000000041059735, w: 0.9996482}
+      scale: {x: 1.0000012, y: 1.000002, z: 1.0000015}
+    - name: mixamorig:RightHandMiddle4
+      parentName: mixamorig:RightHandMiddle3
+      position: {x: -0.0012663057, y: 0.1572808, z: -7.738606e-11}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:RightHandThumb1
+      parentName: mixamorig:RightHand
+      position: {x: -0.10871612, y: 0.3326915, z: 0.08357162}
+      rotation: {x: 0.12341085, y: 0.0014739927, z: 0.218067, w: 0.96809834}
+      scale: {x: 0.9999998, y: 1.0000023, z: 1.0000006}
+    - name: mixamorig:RightHandThumb2
+      parentName: mixamorig:RightHandThumb1
+      position: {x: -0.02581649, y: 0.28671458, z: -0.0000000010729061}
+      rotation: {x: 0.038771134, y: -0.0072373413, z: -0.011151815, w: 0.99915963}
+      scale: {x: 0.9999996, y: 1.0000005, z: 0.99999994}
+    - name: mixamorig:RightHandThumb3
+      parentName: mixamorig:RightHandThumb2
+      position: {x: -0.029954445, y: 0.23918223, z: 0.0000000024296998}
+      rotation: {x: -0.0034375994, y: -0.0026873657, z: 0.21411537, w: 0.9767987}
+      scale: {x: 1.0000002, y: 1.0000005, z: 1.0000007}
+    - name: mixamorig:RightHandThumb4
+      parentName: mixamorig:RightHandThumb3
+      position: {x: 0.055770952, y: 0.14432684, z: 0.0000000012530604}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:Neck
+      parentName: mixamorig:Spine2
+      position: {x: -0, y: 1.0674773, z: -0.0000000023655669}
+      rotation: {x: -0.0039296215, y: 2.380851e-11, z: 0.000000010655424, w: 0.9999923}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:Head
+      parentName: mixamorig:Neck
+      position: {x: -0, y: 0.5943396, z: 0.15944609}
+      rotation: {x: 0.000000061932944, y: 0.000000027264713, z: 0.000000009291388, w: 1}
+      scale: {x: 1, y: 0.9999998, z: 1.0000005}
+    - name: mixamorig:HeadTop_End
+      parentName: mixamorig:Head
+      position: {x: -0, y: 1.342141, z: 0.36006194}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:LeftShoulder
+      parentName: mixamorig:Spine2
+      position: {x: -0.41698706, y: 0.9706764, z: -0.00091935013}
+      rotation: {x: 0.54955673, y: -0.44470778, z: 0.5508041, w: 0.44366336}
+      scale: {x: 1.0000007, y: 1.0000013, z: 1.0000013}
+    - name: mixamorig:LeftArm
+      parentName: mixamorig:LeftShoulder
+      position: {x: -5.6828525e-11, y: 0.8585009, z: -0.0000000036756274}
+      rotation: {x: -0.093882404, y: 0.019273892, z: -0.002952725, w: 0.9953923}
+      scale: {x: 1.0000014, y: 0.9999997, z: 1.0000044}
+    - name: mixamorig:LeftForeArm
+      parentName: mixamorig:LeftArm
+      position: {x: -8.346213e-12, y: 2.048385, z: 0.000000025441995}
+      rotation: {x: -0.0057320297, y: -0.14576739, z: -0.029627044, w: 0.9888586}
+      scale: {x: 1.0000021, y: 1.0000002, z: 1.0000007}
+    - name: mixamorig:LeftHand
+      parentName: mixamorig:LeftForeArm
+      position: {x: -0.000000008313199, y: 1.9150298, z: 0.000000014301264}
+      rotation: {x: -0.033850204, y: 0.2833152, z: 0.016867576, w: 0.95828086}
+      scale: {x: 1.0000012, y: 1.0000044, z: 1.0000018}
+    - name: mixamorig:LeftHandIndex1
+      parentName: mixamorig:LeftHand
+      position: {x: 0.18649875, y: 0.61393213, z: 0.04611898}
+      rotation: {x: -0.1009609, y: 0.0060686455, z: -0.008592473, w: 0.9948348}
+      scale: {x: 1.0000002, y: 1.0000038, z: 0.9999991}
+    - name: mixamorig:LeftHandIndex2
+      parentName: mixamorig:LeftHandIndex1
+      position: {x: -0.009101067, y: 0.20947593, z: 0.000000004500449}
+      rotation: {x: 0.031196348, y: -0.002091088, z: 0.02912703, w: 0.9990867}
+      scale: {x: 1, y: 0.9999991, z: 1.0000004}
+    - name: mixamorig:LeftHandIndex3
+      parentName: mixamorig:LeftHandIndex2
+      position: {x: 0.004444733, y: 0.18890066, z: -3.6339712e-11}
+      rotation: {x: 0.041566107, y: 0.000000040605855, z: 0.00000010154051, w: 0.99913573}
+      scale: {x: 1.0000019, y: 1.0000036, z: 1.0000011}
+    - name: mixamorig:LeftHandIndex4
+      parentName: mixamorig:LeftHandIndex3
+      position: {x: 0.0046563363, y: 0.13237146, z: 3.9087297e-10}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:LeftHandMiddle1
+      parentName: mixamorig:LeftHand
+      position: {x: -0.028879022, y: 0.6177885, z: -0.026540522}
+      rotation: {x: -0.08848415, y: 0.010536014, z: -0.036968067, w: 0.99533564}
+      scale: {x: 0.9999998, y: 1.0000039, z: 0.9999998}
+    - name: mixamorig:LeftHandMiddle2
+      parentName: mixamorig:LeftHandMiddle1
+      position: {x: -0.005977991, y: 0.20649682, z: 0.0000000045717865}
+      rotation: {x: 0.03391729, y: -0.0003089858, z: 0.021953477, w: 0.9991835}
+      scale: {x: 1.0000006, y: 0.9999997, z: 1.0000015}
+    - name: mixamorig:LeftHandMiddle3
+      parentName: mixamorig:LeftHandMiddle2
+      position: {x: 0.0048140115, y: 0.19364254, z: -9.1652735e-10}
+      rotation: {x: -0.040252358, y: -0.0003111747, z: -0.0026569832, w: 0.999186}
+      scale: {x: 1.0000012, y: 1.0000018, z: 1.0000008}
+    - name: mixamorig:LeftHandMiddle4
+      parentName: mixamorig:LeftHandMiddle3
+      position: {x: 0.0011639715, y: 0.14243126, z: 4.370986e-10}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:LeftHandRing1
+      parentName: mixamorig:LeftHand
+      position: {x: -0.1576198, y: 0.62453973, z: 0.027529864}
+      rotation: {x: 0.038401112, y: 0.0029442608, z: 0.07638734, w: 0.99633414}
+      scale: {x: 1.000003, y: 0.99999815, z: 1.0000017}
+    - name: mixamorig:LeftHandRing2
+      parentName: mixamorig:LeftHandRing1
+      position: {x: -0.0006776404, y: 0.13937376, z: 0.0000000013204856}
+      rotation: {x: 0.040322747, y: 0.000054712167, z: 0.0024237533, w: 0.99918383}
+      scale: {x: 1.0000007, y: 1.0000012, z: 1.000001}
+    - name: mixamorig:LeftHandRing3
+      parentName: mixamorig:LeftHandRing2
+      position: {x: 0.0016701608, y: 0.15122709, z: 2.510356e-10}
+      rotation: {x: -0.039020218, y: -0.000019610616, z: -0.0057628364, w: 0.9992218}
+      scale: {x: 1.0000007, y: 1.0000018, z: 0.9999996}
+    - name: mixamorig:LeftHandRing4
+      parentName: mixamorig:LeftHandRing3
+      position: {x: -0.0009925149, y: 0.09737011, z: -8.239311e-11}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:LeftHandThumb1
+      parentName: mixamorig:LeftHand
+      position: {x: 0.12409477, y: 0.34285033, z: 0.080294944}
+      rotation: {x: 0.10559897, y: -0.0051657856, z: -0.24473697, w: 0.9638081}
+      scale: {x: 0.9999977, y: 1.0000025, z: 1.000001}
+    - name: mixamorig:LeftHandThumb2
+      parentName: mixamorig:LeftHandThumb1
+      position: {x: 0.013473371, y: 0.29837856, z: 8.117396e-10}
+      rotation: {x: 0.039656404, y: 0.001955637, z: 0.0048040436, w: 0.9992}
+      scale: {x: 1, y: 1.000001, z: 1.0000013}
+    - name: mixamorig:LeftHandThumb3
+      parentName: mixamorig:LeftHandThumb2
+      position: {x: 0.014926418, y: 0.2276521, z: 0.0000000017404562}
+      rotation: {x: -0.026730778, y: 0.010418343, z: -0.113823466, w: 0.9930867}
+      scale: {x: 0.9999997, y: 1.0000007, z: 0.99999815}
+    - name: mixamorig:LeftHandThumb4
+      parentName: mixamorig:LeftHandThumb3
+      position: {x: -0.028399784, y: 0.138857, z: -0.0000000037599404}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: cbde39836fe947a4392e92021413111f, type: 3}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 2
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
