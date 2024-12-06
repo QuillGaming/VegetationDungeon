@@ -44,14 +44,15 @@ public class playerScript : MonoBehaviour
     void Start()
     {
         // the enemies are created with separate health variables, but when the damage is applied, it is only applied to enemy #1
-        e1 = Enemy.CreateEnemy(1f, 10f, 2f, GameObject.Find("Enemy1"), GameObject.Find("Enemy1").transform.GetChild(2).GetChild(0).gameObject);
-        e2 = Enemy.CreateEnemy(1f, 10f, 2f, GameObject.Find("Enemy2"), GameObject.Find("Enemy2").transform.GetChild(2).GetChild(0).gameObject);
-        e3 = Enemy.CreateEnemy(1f, 10f, 2f, GameObject.Find("Enemy3"), GameObject.Find("Enemy3").transform.GetChild(2).GetChild(0).gameObject);
-        e4 = Enemy.CreateEnemy(1f, 10f, 2f, GameObject.Find("Enemy4"), GameObject.Find("Enemy4").transform.GetChild(2).GetChild(0).gameObject);
-        e5 = Enemy.CreateEnemy(1f, 10f, 2f, GameObject.Find("Enemy5"), GameObject.Find("Enemy5").transform.GetChild(2).GetChild(0).gameObject);
-        e6 = Enemy.CreateEnemy(1f, 10f, 2f, GameObject.Find("Enemy6"), GameObject.Find("Enemy6").transform.GetChild(2).GetChild(0).gameObject);
-        e7 = Enemy.CreateEnemy(1f, 10f, 2f, GameObject.Find("Enemy7"), GameObject.Find("Enemy7").transform.GetChild(2).GetChild(0).gameObject);
-        e8 = Enemy.CreateEnemy(1f, 10f, 2f, GameObject.Find("Enemy8"), GameObject.Find("Enemy8").transform.GetChild(2).GetChild(0).gameObject);
+        e1 = Enemy.CreateEnemy(1f, 10f, 0f, GameObject.Find("Enemy1"), GameObject.Find("Enemy1").transform.GetChild(2).GetChild(0).gameObject);
+        e2 = Enemy.CreateEnemy(1f, 10f, 0f, GameObject.Find("Enemy2"), GameObject.Find("Enemy2").transform.GetChild(2).GetChild(0).gameObject);
+        e3 = Enemy.CreateEnemy(1f, 10f, 0f, GameObject.Find("Enemy3"), GameObject.Find("Enemy3").transform.GetChild(2).GetChild(0).gameObject);
+        e4 = Enemy.CreateEnemy(1f, 10f, 0f, GameObject.Find("Enemy4"), GameObject.Find("Enemy4").transform.GetChild(2).GetChild(0).gameObject);
+        e5 = Enemy.CreateEnemy(1f, 10f, 0f, GameObject.Find("Enemy5"), GameObject.Find("Enemy5").transform.GetChild(2).GetChild(0).gameObject);
+        e6 = Enemy.CreateEnemy(1f, 10f, 0f, GameObject.Find("Enemy6"), GameObject.Find("Enemy6").transform.GetChild(2).GetChild(0).gameObject);
+        e7 = Enemy.CreateEnemy(1f, 10f, 0f, GameObject.Find("Enemy7"), GameObject.Find("Enemy7").transform.GetChild(2).GetChild(0).gameObject);
+        e8 = Enemy.CreateEnemy(1f, 10f, 0f, GameObject.Find("Enemy8"), GameObject.Find("Enemy8").transform.GetChild(2).GetChild(0).gameObject);
+        HUD.text = "";
     }
 
     // Update is called once per frame
@@ -131,6 +132,10 @@ public class playerScript : MonoBehaviour
             e2.setHitPlayer(false);
             e3.setHitPlayer(false);
             e4.setHitPlayer(false);
+            e5.setHitPlayer(false);
+            e6.setHitPlayer(false);
+            e7.setHitPlayer(false);
+            e8.setHitPlayer(false);
             GameObject.Find("Player").GetComponent<Animator>().SetBool("isDead", true);
             pHealthBar.SetActive(false);
             if (Input.GetKeyDown("p"))
@@ -170,8 +175,6 @@ public class playerScript : MonoBehaviour
             SceneManager.LoadScene("MainMenu");
         }
     }
-
-    
 
     private void OnTriggerEnter(Collider other)
     {
@@ -475,24 +478,22 @@ public class playerScript : MonoBehaviour
             e.setHealthDelay(false);
         }
 
-        e.setAttackDelay(e.getAttackDelay() - Time.deltaTime);
+        if (e.getAttackDelay() > 0.0f)
+        {
+            e.setAttackDelay(e.getAttackDelay() - Time.deltaTime);
+        }
+
         if (e.getAttackDelay() <= 0.0f)
         {
             e.getEnemy().transform.GetChild(1).gameObject.GetComponent<Animator>().SetBool("isPunching", false);
-            if (e.getHitPlayer() && e.getHitPoints() > 0 && playerHealth > 0)//e.getAttackDelay() <= 0.0f &&
+            if (e.getHitPlayer() && e.getHitPoints() > 0 && playerHealth > 0)
             {
-                if (!e.getFirstAttack())
-                {
-                    playerHealth -= 1;
-                    pHealthBar.GetComponent<playerHealthBar>().UpdateHealthBar(playerHealth, 25f);
-                }
-                e.setAttackDelay(1.8f); //was 2.5 which was too slow for tests
+                playerHealth -= 1;
+                pHealthBar.GetComponent<playerHealthBar>().UpdateHealthBar(playerHealth, 25f);
+                e.setAttackDelay(1.6f); //was 2.5 which was too slow for tests, ideal is 1.8
                 e.getEnemy().transform.GetChild(1).gameObject.GetComponent<Animator>().SetBool("isPunching", true);
-                e.setFirstAttack(false);
             }
         }
-        
-
     }
 
     //perform raycasting for line of sight capability

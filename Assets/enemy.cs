@@ -10,7 +10,6 @@ public class Enemy: ScriptableObject
     private bool canHitPlayer;
     private GameObject healthBar;
     private bool healthDisplayDelay;
-    private bool firstAttack;
     //public Animator anim;
     //public PlayerHealth playerHealth;
 
@@ -23,7 +22,6 @@ public class Enemy: ScriptableObject
         hitable = false;
         canHitPlayer = false;
         healthDisplayDelay = false;
-        firstAttack = true;
         healthBar = hb;
         //anim = a;
 
@@ -96,15 +94,4 @@ public class Enemy: ScriptableObject
     {
         healthDisplayDelay = delay;
     }
-
-    public bool getFirstAttack()
-    {
-        return firstAttack;
-    }
-
-    public void setFirstAttack(bool first)
-    {
-        firstAttack = first;
-    }
-
 }
