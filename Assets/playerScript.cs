@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using TMPro;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class playerScript : MonoBehaviour
 {
@@ -125,13 +126,17 @@ public class playerScript : MonoBehaviour
         //player death
         if (playerHealth <= 0)
         {   //stops agent from following player after death
-            HUD.text = "You have died.";
+            HUD.text = "You have died.\nPress 'p' to restart.";
             e1.setHitPlayer(false);
             e2.setHitPlayer(false);
             e3.setHitPlayer(false);
             e4.setHitPlayer(false);
             GameObject.Find("Player").GetComponent<Animator>().SetBool("isDead", true);
             pHealthBar.SetActive(false);
+            if (Input.GetKeyDown("p"))
+            {
+                SceneManager.LoadScene("MainMenu");
+            }
         }
 
         //calls a method for each enemy
@@ -159,7 +164,11 @@ public class playerScript : MonoBehaviour
             transform.Rotate(Vector3.up, mv.x * yRot);
             GetComponent<Rigidbody>().linearVelocity = transform.forward * mv.y * playerSpeed;
         }
-        
+
+        if (Input.GetKeyDown("p"))
+        {
+            SceneManager.LoadScene("MainMenu");
+        }
     }
 
     
