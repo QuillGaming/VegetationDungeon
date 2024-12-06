@@ -178,6 +178,10 @@ public class playerScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if (other.gameObject.name == "goal")
+        {
+            SceneManager.LoadScene(0);
+        }
         if (other.gameObject.name == e1.getEnemy().name)
         {
             e1.setHitable(true);
