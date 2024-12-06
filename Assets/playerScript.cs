@@ -33,6 +33,10 @@ public class playerScript : MonoBehaviour
     Enemy e2;
     Enemy e3;
     Enemy e4;
+    Enemy e5;
+    Enemy e6;
+    Enemy e7;
+    Enemy e8;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -43,6 +47,10 @@ public class playerScript : MonoBehaviour
         e2 = Enemy.CreateEnemy(1f, 10f, 2f, GameObject.Find("Enemy2"), GameObject.Find("Enemy2").transform.GetChild(2).GetChild(0).gameObject);
         e3 = Enemy.CreateEnemy(1f, 10f, 2f, GameObject.Find("Enemy3"), GameObject.Find("Enemy3").transform.GetChild(2).GetChild(0).gameObject);
         e4 = Enemy.CreateEnemy(1f, 10f, 2f, GameObject.Find("Enemy4"), GameObject.Find("Enemy4").transform.GetChild(2).GetChild(0).gameObject);
+        e5 = Enemy.CreateEnemy(1f, 10f, 2f, GameObject.Find("Enemy5"), GameObject.Find("Enemy5").transform.GetChild(2).GetChild(0).gameObject);
+        e6 = Enemy.CreateEnemy(1f, 10f, 2f, GameObject.Find("Enemy6"), GameObject.Find("Enemy6").transform.GetChild(2).GetChild(0).gameObject);
+        e7 = Enemy.CreateEnemy(1f, 10f, 2f, GameObject.Find("Enemy7"), GameObject.Find("Enemy7").transform.GetChild(2).GetChild(0).gameObject);
+        e8 = Enemy.CreateEnemy(1f, 10f, 2f, GameObject.Find("Enemy8"), GameObject.Find("Enemy8").transform.GetChild(2).GetChild(0).gameObject);
     }
 
     // Update is called once per frame
@@ -131,7 +139,11 @@ public class playerScript : MonoBehaviour
         EnemyActions(e2);
         EnemyActions(e3);
         EnemyActions(e4);
-        
+        EnemyActions(e5);
+        EnemyActions(e6);
+        EnemyActions(e7);
+        EnemyActions(e8);
+
         animationDelay -= Time.deltaTime;
     }
 
@@ -170,6 +182,22 @@ public class playerScript : MonoBehaviour
         {
             e4.setHitable(true);
         }
+        if (other.gameObject.name == e5.getEnemy().name)
+        {
+            e5.setHitable(true);
+        }
+        if (other.gameObject.name == e6.getEnemy().name)
+        {
+            e6.setHitable(true);
+        }
+        if (other.gameObject.name == e7.getEnemy().name)
+        {
+            e7.setHitable(true);
+        }
+        if (other.gameObject.name == e8.getEnemy().name)
+        {
+            e8.setHitable(true);
+        }
 
         if (other.gameObject == GameObject.Find("Enemy1").transform.GetChild(0).gameObject)
         {
@@ -186,6 +214,22 @@ public class playerScript : MonoBehaviour
         if (other.gameObject == GameObject.Find("Enemy4").transform.GetChild(0).gameObject)
         {
             e4.setHitPlayer(true);
+        }
+        if (other.gameObject == GameObject.Find("Enemy5").transform.GetChild(0).gameObject)
+        {
+            e5.setHitPlayer(true);
+        }
+        if (other.gameObject == GameObject.Find("Enemy6").transform.GetChild(0).gameObject)
+        {
+            e6.setHitPlayer(true);
+        }
+        if (other.gameObject == GameObject.Find("Enemy7").transform.GetChild(0).gameObject)
+        {
+            e7.setHitPlayer(true);
+        }
+        if (other.gameObject == GameObject.Find("Enemy8").transform.GetChild(0).gameObject)
+        {
+            e8.setHitPlayer(true);
         }
 
 
@@ -254,6 +298,22 @@ public class playerScript : MonoBehaviour
         {
             e4.setHitable(true);
         }
+        if (other1.gameObject.name == e5.getEnemy().name)
+        {
+            e5.setHitable(true);
+        }
+        if (other1.gameObject.name == e6.getEnemy().name)
+        {
+            e6.setHitable(true);
+        }
+        if (other1.gameObject.name == e7.getEnemy().name)
+        {
+            e7.setHitable(true);
+        }
+        if (other1.gameObject.name == e8.getEnemy().name)
+        {
+            e8.setHitable(true);
+        }
 
         if (other1.gameObject.name == "pick_sword" && !sword)
         {
@@ -319,6 +379,22 @@ public class playerScript : MonoBehaviour
         {
             e4.setHitable(false);
         }
+        if (other2.gameObject.name == e5.getEnemy().name)
+        {
+            e5.setHitable(false);
+        }
+        if (other2.gameObject.name == e6.getEnemy().name)
+        {
+            e6.setHitable(false);
+        }
+        if (other2.gameObject.name == e7.getEnemy().name)
+        {
+            e7.setHitable(false);
+        }
+        if (other2.gameObject.name == e8.getEnemy().name)
+        {
+            e8.setHitable(false);
+        }
 
 
         if (other2.gameObject == GameObject.Find("Enemy1").transform.GetChild(0).gameObject)
@@ -337,6 +413,22 @@ public class playerScript : MonoBehaviour
         {
             e4.setHitPlayer(false);
         }
+        if (other2.gameObject == GameObject.Find("Enemy5").transform.GetChild(0).gameObject)
+        {
+            e5.setHitPlayer(false);
+        }
+        if (other2.gameObject == GameObject.Find("Enemy6").transform.GetChild(0).gameObject)
+        {
+            e6.setHitPlayer(false);
+        }
+        if (other2.gameObject == GameObject.Find("Enemy7").transform.GetChild(0).gameObject)
+        {
+            e7.setHitPlayer(false);
+        }
+        if (other2.gameObject == GameObject.Find("Enemy8").transform.GetChild(0).gameObject)
+        {
+            e8.setHitPlayer(false);
+        }
     }
 
     private void EnemyActions(Enemy e)
@@ -349,7 +441,7 @@ public class playerScript : MonoBehaviour
             e.getHealthBar().SetActive(false);
             e.setHitable(false);
         }
-        else if (e.getHitPlayer() || !HasLineOfSight(e.getEnemy().transform, GameObject.Find("Player").transform))
+        else if (e.getHitPlayer() || playerHealth <= 0 || !HasLineOfSight(e.getEnemy().transform, GameObject.Find("Player").transform))
         {
             e.getEnemy().GetComponent<UnityEngine.AI.NavMeshAgent>().isStopped = true;
             e.getEnemy().transform.GetChild(1).gameObject.GetComponent<Animator>().SetBool("isWalking", false);
@@ -375,17 +467,22 @@ public class playerScript : MonoBehaviour
         }
 
         e.setAttackDelay(e.getAttackDelay() - Time.deltaTime);
-        if (e.getHitPlayer() && e.getAttackDelay() <= 0.0f && e.getHitPoints() > 0)
-        {
-            playerHealth -= 1;
-            pHealthBar.GetComponent<playerHealthBar>().UpdateHealthBar(playerHealth, 20f);
-            e.setAttackDelay(2f); //was 2.5 which was too slow for tests
-            e.getEnemy().transform.GetChild(1).gameObject.GetComponent<Animator>().SetBool("isPunching", true);
-        }
-        else if(e.getAttackDelay() <= 0.0f)
+        if (e.getAttackDelay() <= 0.0f)
         {
             e.getEnemy().transform.GetChild(1).gameObject.GetComponent<Animator>().SetBool("isPunching", false);
+            if (e.getHitPlayer() && e.getHitPoints() > 0 && playerHealth > 0)//e.getAttackDelay() <= 0.0f &&
+            {
+                if (!e.getFirstAttack())
+                {
+                    playerHealth -= 1;
+                    pHealthBar.GetComponent<playerHealthBar>().UpdateHealthBar(playerHealth, 25f);
+                }
+                e.setAttackDelay(1.8f); //was 2.5 which was too slow for tests
+                e.getEnemy().transform.GetChild(1).gameObject.GetComponent<Animator>().SetBool("isPunching", true);
+                e.setFirstAttack(false);
+            }
         }
+        
 
     }
 
